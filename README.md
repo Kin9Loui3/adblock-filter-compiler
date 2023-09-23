@@ -15,49 +15,10 @@ I like to leave the actual hard work to the professionals, like the ones below, 
 
 This project combines the following filter lists by default:
 
-<table>
-<thead>
-<tr>
-<th>Name</th>
-<th>Link</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>OISD Big</td>
-<td><a href="https://github.com/sjhgvr/oisd/">view</a></td>
-</tr>
-<tr>
-<tr>
-<td>HaGeZi</td>
-<td><a href="https://github.com/hagezi/dns-blocklists">view</a></td>
-</tr>
-<tr>
-<td>1Hosts Pro</td>
-<td><a href="https://github.com/badmojr/1Hosts/">view</a></td>
-</tr>
-<tr>
-<td>notracking</td>
-<td><a href="https://github.com/notracking/hosts-blocklists">view</a></td>
-</tr>
-<td>GoodbyeAds</td>
-<td><a href="https://github.com/jerryn70/GoodbyeAds">view</a></td>
-</tr>
-<tr>
-<td>hblock</td>
-<td><a href="https://hblock.molinero.dev">view</a></td>
-</tr>
-<tr>
-<td>Firefox Hosts</td>
-<td><a href="https://github.com/MrRawes/firefox-hosts">view</a></td>
-</tr>
-</tbody>
-</table>
-
 You can easily add your own blacklists or whitelists by modifying the `config.json` script and updating the `blacklist_urls` or `whitelist_urls` section with the URLs of your custom filter lists.
 
 This project uses my own personal whitelist by default:
-- [Glitch Whitelist](https://box.glitchery.jp/whitelist.txt)
+- [Kin9Loui3 Whitelist]()
 
 ## Usage
 
