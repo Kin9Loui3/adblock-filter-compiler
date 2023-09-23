@@ -1,9 +1,14 @@
 {
     "blacklist_urls":  [
-        "https://raw.githubusercontent.com/sjhgvr/oisd/main/abp_big.txt"
+"https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/pro.txt",
+"https://raw.githubusercontent.com/sjhgvr/oisd/main/abp_big.txt",
+"https://hblock.molinero.dev/hosts_adblock.txt",
+"https://raw.githubusercontent.com/d3ward/toolz/master/src/d3host.txt"
     ],
     "whitelist_urls": [
-        "https://box.glitchery.jp/whitelist.txt"
+"https://raw.githubusercontent.com/AhaDNS/Aha.Dns.Domains/master/Domains/whitelist.txt",
+"https://raw.githubusercontent.com/anudeepND/whitelist/master/domains/whitelist.txt",
+"https://raw.githubusercontent.com/Kin9Loui3/VoWiFi/main/TMobile-Ultra-AGH-Whitelist.txt"
     ],
     "blacklist_filename": "blacklist-standard.txt",
     "whitelist_filename": "whitelist-standard.txt"
