@@ -111,7 +111,9 @@
 "https://blocklistproject.github.io/Lists/ransomware.txt",
 "https://blocklistproject.github.io/Lists/malware.txt",
 "https://blocklistproject.github.io/Lists/fraud.txt",
-"https://raw.githubusercontent.com/sjhgvr/oisd/main/abp_big.txt"
+"https://raw.githubusercontent.com/sjhgvr/oisd/main/abp_big.txt",
+"https://raw.githubusercontent.com/bongochong/CombinedPrivacyBlockLists/master/NoFormatting/cpbl-ctld.txt",
+"https://raw.githubusercontent.com/bongochong/CombinedPrivacyBlockLists/master/NoFormatting/BlacklistedDomains.txt"
     ],
     "whitelist_urls": [
 "https://raw.githubusercontent.com/AhaDNS/Aha.Dns.Domains/master/Domains/whitelist.txt",
