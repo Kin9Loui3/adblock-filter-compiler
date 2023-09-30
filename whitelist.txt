@@ -1,6 +1,6 @@
 # Title: Glitch Compiled Whitelist
 # Description: Python script that generates adblock filters by combining whitelists, host files, and domain lists.
-# Last Modified: 2023-09-30 00:38:21 
+# Last Modified: 2023-09-30 09:13:07 
 # Domain Count: 125
 # Duplicates Removed: 1
 # Domains Compressed: 131
@@ -8,20 +8,23 @@
 
 @@||1drv.com^
 @@||2.android.pool.ntp.org^
+@@||aboo.se^
 @@||ahadns.org^
 @@||akamaihd.net^
 @@||akamaitechnologies.com^
+@@||akamaized.net^
 @@||amazonaws.com^
 @@||api.ipify.org^
 @@||api.rlje.net^
 @@||app.adjust.com^
 @@||appleid.apple.com^
+@@||apps.skype.com^
 @@||appsbackup-pa.googleapis.com^
-@@||apt.sonarr.tv^
 @@||aspnetcdn.com^
 @@||assets.adobedtm.com^
 @@||ax.phobos.apple.com.edgesuite.net^
-@@||brightcove.net^
+@@||bit.ly^
+@@||blocket.se^
 @@||c.s-microsoft.com^
 @@||cdn.cloudflare.net^
 @@||cdn.embedly.com^
@@ -29,24 +32,24 @@
 @@||cdn.stream.schibsted.media^
 @@||cdnjs.cloudflare.com^
 @@||clientconfig.passport.net^
+@@||clients3.google.com^
 @@||connectivitycheck.android.com^
-@@||crl.t-mobile.com^
+@@||cpms.spop10.ams.plex.bz^
 @@||ctldl.windowsupdate.com^
 @@||d2c8v52ll5s99u.cloudfront.net^
-@@||dataplicity.com^
-@@||def-vef.xboxlive.com^
 @@||delivery.vidible.tv^
 @@||display.ugc.bazaarvoice.com^
+@@||displaycatalog.mp.microsoft.com^
 @@||dl.dropbox.com^
 @@||dl.dropboxusercontent.com^
-@@||dnsotls-ds.metric.gstatic.com^
-@@||dot.in.ahadns.net^
+@@||doh.in.ahadns.net^
+@@||download.sonarr.tv^
 @@||drift.com^
 @@||driftt.com^
-@@||edge.api.brightcove.com^
-@@||epdg.epc.mnc260.mcc310.pub.3gppnetwork.org^
+@@||ecn.dev.virtualearth.net^
 @@||facebook.com^
 @@||full.pr0gramm.com^
+@@||g.live.com^
 @@||g.udimg.com^
 @@||gfwsl.geforce.com^
 @@||giphy.com^
@@ -56,7 +59,6 @@
 @@||goo.gl^
 @@||gravatar.com^
 @@||hls.ted.com^
-@@||hrblock.com^
 @@||imagesak.secureserver.net^
 @@||imgix.net^
 @@||imgs.xkcd.com^
@@ -65,15 +67,16 @@
 @@||jquery.com^
 @@||jsdelivr.net^
 @@||keystone.mwbsys.com^
-@@||kuaidi100.com^
-@@||lastfm-img2.akamaized.net^
 @@||lgappstv.com^
-@@||live.com^
+@@||livepassdl.conviva.com^
+@@||login.microsoftonline.com^
+@@||m.kuaidi100.com^
 @@||manifest.googlevideo.com^
-@@||microsoftonline.com^
-@@||my.plexapp.com^
-@@||no-ip.com^
-@@||nordichardware.se^
+@@||mascns.t-mobile.com^
+@@||meta.plex.tv^
+@@||metric.gstatic.com^
+@@||msftncsi.com^
+@@||nine.plugins.plexapp.com^
 @@||npr-news.streaming.adswizz.com^
 @@||nu.nl^
 @@||office.com^
@@ -83,8 +86,7 @@
 @@||ow.ly^
 @@||pi-dns.com^
 @@||placehold.it^
-@@||pocketnow.com^
-@@||proxy.plex.bz^
+@@||players.brightcove.net^
 @@||raw.githubusercontent.com^
 @@||redir.diamond.synacor.com^
 @@||res.cloudinary.com^
@@ -96,38 +98,36 @@
 @@||sa.symcb.com^
 @@||safelinking.net^
 @@||secure.avangate.com^
+@@||secure.brightcove.com^
 @@||secure.surveymonkey.com^
 @@||slack-redir.net^
 @@||spclient.wg.spotify.com^
+@@||ss.epdg.epc.mnc260.mcc310.pub.3gppnetwork.org^
 @@||ssl.p.jwpcdn.com^
-@@||status.ahadns.com^
+@@||statistics.ahadns.com^
 @@||t.co^
-@@||t0.ssl.ak.tiles.virtualearth.net^
 @@||tawk.to^
 @@||tedcdn.com^
-@@||thelasthunt.com^
 @@||themoviedb.com^
 @@||thepiratebay.org^
 @@||thetvdb.com^
 @@||tinyurl.com^
 @@||traffic.libsyn.com^
-@@||tvdb2.plex.tv^
 @@||twimg.com^
-@@||ui.skype.com^
 @@||vanilla.futurecdn.net^
-@@||video-stats.l.google.com^
 @@||vidtech.cbsinteractive.com^
 @@||widget-cdn.rpxnow.com^
-@@||win10.ipv6.microsoft.com^
 @@||ws.audioscrobbler.com^
-@@||www.aboo.se^
-@@||www.bit.ly^
-@@||www.blocket.se^
+@@||www.dataplicity.com^
+@@||www.hrblock.com^
 @@||www.ivory.co.il^
 @@||www.msftconnecttest.com^
-@@||www.msftncsi.com^
+@@||www.no-ip.com^
 @@||www.noexit.tv^
+@@||www.nordichardware.se^
+@@||www.pocketnow.com^
+@@||www.thelasthunt.com^
+@@||www.youtube-nocookie.com^
+@@||xsts.auth.xboxlive.com^
 @@||youtu.be^
-@@||youtube-nocookie.com^
 @@||yt3.ggpht.com^
-@@||zee.cws.conviva.com^
