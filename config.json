@@ -110,7 +110,7 @@
 "https://blocklistproject.github.io/Lists/scams.txt",
 "https://blocklistproject.github.io/Lists/ransomware.txt",
 "https://blocklistproject.github.io/Lists/malware.txt",
-"https://blocklistproject.github.io/Lists/fraud.txt",
+"https://blocklistproject.github.io/Lists/fraud.txt"
     ],
     "whitelist_urls": [
 "https://raw.githubusercontent.com/AhaDNS/Aha.Dns.Domains/master/Domains/whitelist.txt",
