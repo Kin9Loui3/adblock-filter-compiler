@@ -3,7 +3,8 @@
 "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/pro.txt",
 "https://raw.githubusercontent.com/sjhgvr/oisd/main/abp_big.txt",
 "https://hblock.molinero.dev/hosts_adblock.txt",
-"https://raw.githubusercontent.com/d3ward/toolz/master/src/d3host.txt"
+"https://raw.githubusercontent.com/d3ward/toolz/master/src/d3host.txt",
+"https://blocklistproject.github.io/Lists/basic.txt"
     ],
     "whitelist_urls": [
 "https://raw.githubusercontent.com/AhaDNS/Aha.Dns.Domains/master/Domains/whitelist.txt",
