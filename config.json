@@ -100,7 +100,6 @@
 "https://raw.githubusercontent.com/mullvad/dns-blocklists/main/lists/doh/privacy/telemetry-xiaomi",
 "https://raw.githubusercontent.com/dnswarden/blocklist-staging/main/blacklist/blacklistcommon.txt",
 "https://raw.githubusercontent.com/ElCap1tan/PiHole-Parsed-Filter-Lists/master/lists/adblock_bg.host",
-"https://raw.githubusercontent.com/pengelana/blocklist/master/domain.txt",
 "https://raw.githubusercontent.com/jerryn70/GoodbyeAds/master/Formats/GoodbyeAds-AdBlock-Filter.txt",
 "https://raw.githubusercontent.com/jerryn70/GoodbyeAds/master/Extension/GoodbyeAds-Spotify-AdBlock.txt",
 "https://raw.githubusercontent.com/jerryn70/GoodbyeAds/master/Extension/GoodbyeAds-Samsung-AdBlock.txt",
