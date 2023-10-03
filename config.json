@@ -111,7 +111,7 @@
 "https://blocklistproject.github.io/Lists/ransomware.txt",
 "https://blocklistproject.github.io/Lists/malware.txt",
 "https://blocklistproject.github.io/Lists/fraud.txt",
-"https://raw.githubusercontent.com/sjhgvr/oisd/main/abp_big.txt",
+"https://github.com/pishangujeniya/layman-adlist/raw/main/layman_adlist_hosts.txt",
 "https://raw.githubusercontent.com/bongochong/CombinedPrivacyBlockLists/master/NoFormatting/cpbl-ctld.txt",
 "https://raw.githubusercontent.com/bongochong/CombinedPrivacyBlockLists/master/NoFormatting/BlacklistedDomains.txt"
     ],
