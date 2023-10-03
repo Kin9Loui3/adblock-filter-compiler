@@ -70,9 +70,9 @@ def generate_header(domain_count, duplicates_removed, redundant_rules_removed, f
     """Generates header with specific domain count, removed duplicates, and compressed domains information."""
     date_time = datetime.now().strftime('%Y-%m-%d %H:%M:%S %Z')  # Includes date, time, and timezone
     if filter_type == 'blacklist':
-        title = "Glitch Compiled Blacklist"
+        title = "Kin9Loui3's Compiled Blacklist"
     elif filter_type == 'whitelist':
-        title = "Glitch Compiled Whitelist"
+        title = "Kin9Loui3's Compiled Whitelist"
     else:
         title = "Filter"
     return f"""# Title: {title}
