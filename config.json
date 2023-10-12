@@ -112,7 +112,8 @@
 "https://blocklistproject.github.io/Lists/fraud.txt",
 "https://github.com/pishangujeniya/layman-adlist/raw/main/layman_adlist_hosts.txt",
 "https://raw.githubusercontent.com/bongochong/CombinedPrivacyBlockLists/master/NoFormatting/cpbl-ctld.txt",
-"https://raw.githubusercontent.com/bongochong/CombinedPrivacyBlockLists/master/NoFormatting/BlacklistedDomains.txt"
+"https://raw.githubusercontent.com/bongochong/CombinedPrivacyBlockLists/master/NoFormatting/BlacklistedDomains.txt",
+"https://raw.githubusercontent.com/bigdargon/hostsVN/master/hosts"
     ],
     "whitelist_urls": [
 "https://raw.githubusercontent.com/AhaDNS/Aha.Dns.Domains/master/Domains/whitelist.txt",
