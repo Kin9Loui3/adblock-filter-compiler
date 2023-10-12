@@ -4,7 +4,8 @@
 "https://raw.githubusercontent.com/sjhgvr/oisd/main/abp_big.txt",
 "https://hblock.molinero.dev/hosts_adblock.txt",
 "https://raw.githubusercontent.com/d3ward/toolz/master/src/d3host.txt",
-"https://blocklistproject.github.io/Lists/basic.txt"
+"https://blocklistproject.github.io/Lists/basic.txt",
+"https://raw.githubusercontent.com/bigdargon/hostsVN/master/hosts"
     ],
     "whitelist_urls": [
 "https://raw.githubusercontent.com/AhaDNS/Aha.Dns.Domains/master/Domains/whitelist.txt",
