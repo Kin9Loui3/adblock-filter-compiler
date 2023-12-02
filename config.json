@@ -107,7 +107,7 @@
 "https://raw.githubusercontent.com/igorskyflyer/ad-void/main/AdVoid.DNS.txt",
 "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/Other%20domains%20versions/BrowseWebsitesWithoutLoggingInAGH.txt",
 "https://raw.githubusercontent.com/mmotti/adguard-home-filters/master/filters.txt",
-"url: https://raw.githubusercontent.com/PoorPocketsMcNewHold/steamscamsites/master/steamscamsite.txt"
+"https://raw.githubusercontent.com/PoorPocketsMcNewHold/steamscamsites/master/steamscamsite.txt"
     ],
     "whitelist_urls": [
 "https://raw.githubusercontent.com/AhaDNS/Aha.Dns.Domains/master/Domains/whitelist.txt",
