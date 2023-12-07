@@ -109,7 +109,10 @@
 "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/Other%20domains%20versions/BrowseWebsitesWithoutLoggingInAGH.txt",
 "https://raw.githubusercontent.com/mmotti/adguard-home-filters/master/filters.txt",
 "https://raw.githubusercontent.com/PoorPocketsMcNewHold/steamscamsites/master/steamscamsite.txt",
-"https://raw.githubusercontent.com/greyhat-academy/lists.d/main/ai.content.domains.block.list.tsv"
+"https://raw.githubusercontent.com/greyhat-academy/lists.d/main/ai.content.domains.block.list.tsv",
+"https://raw.githubusercontent.com/greyhat-academy/lists.d/main/activitypub.domains.block.list.tsv",
+"https://raw.githubusercontent.com/greyhat-academy/lists.d/main/gambling.domains.block.list.tsv",
+"https://raw.githubusercontent.com/greyhat-academy/lists.d/main/spammers.domains.block.list.tsv"
     ],
     "whitelist_urls": [
 "https://raw.githubusercontent.com/AhaDNS/Aha.Dns.Domains/master/Domains/whitelist.txt",
