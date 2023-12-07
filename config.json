@@ -42,6 +42,7 @@
 "https://raw.githubusercontent.com/marco-acorte/antispam-it/main/antispam-it.txt",
 "https://raw.githubusercontent.com/matomo-org/referrer-spam-blacklist/master/spammers.txt",
 "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/light.txt",
+"https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/tif.txt",
 "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/doh-vpn-proxy-bypass.txt",
 "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/hoster.txt",
 "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/dyndns.txt",
