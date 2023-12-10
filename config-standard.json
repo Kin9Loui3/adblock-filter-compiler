@@ -4,7 +4,8 @@
 "https://raw.githubusercontent.com/sjhgvr/oisd/main/abp_big.txt",
 "https://hblock.molinero.dev/hosts_adblock.txt",
 "https://raw.githubusercontent.com/d3ward/toolz/master/src/d3host.txt",
-"https://github.com/pishangujeniya/layman-adlist/raw/main/layman_adlist_hosts.txt"
+"https://github.com/pishangujeniya/layman-adlist/raw/main/layman_adlist_hosts.txt",
+"https://raw.githubusercontent.com/pengelana/blocklist/master/domain.txt"
     ],
     "whitelist_urls": [
 "https://raw.githubusercontent.com/AhaDNS/Aha.Dns.Domains/master/Domains/whitelist.txt",
