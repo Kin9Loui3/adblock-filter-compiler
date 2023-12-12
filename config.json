@@ -115,7 +115,10 @@
 "https://raw.githubusercontent.com/greyhat-academy/lists.d/main/spammers.domains.block.list.tsv",
 "https://raw.githubusercontent.com/cbuijs/oisd/master/big/domains.top-n.adblock",
 "https://raw.githubusercontent.com/greyhat-academy/lists.d/main/drop.ipv4.block.list.tsv",
-"https://raw.githubusercontent.com/greyhat-academy/lists.d/main/milintel.ipv4.block.list.tsv"
+"https://raw.githubusercontent.com/greyhat-academy/lists.d/main/milintel.ipv4.block.list.tsv",
+"https://raw.githubusercontent.com/ShadowWhisperer/IPs/master/Other/Scanners",
+"https://raw.githubusercontent.com/ShadowWhisperer/IPs/master/BruteForce/Medium",
+"https://raw.githubusercontent.com/ShadowWhisperer/IPs/master/BruteForce/High"
     ],
     "whitelist_urls": [
 "https://raw.githubusercontent.com/AhaDNS/Aha.Dns.Domains/master/Domains/whitelist.txt",
