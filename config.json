@@ -112,7 +112,8 @@
 "https://raw.githubusercontent.com/greyhat-academy/lists.d/main/ai.content.domains.block.list.tsv",
 "https://raw.githubusercontent.com/greyhat-academy/lists.d/main/activitypub.domains.block.list.tsv",
 "https://raw.githubusercontent.com/greyhat-academy/lists.d/main/gambling.domains.block.list.tsv",
-"https://raw.githubusercontent.com/greyhat-academy/lists.d/main/spammers.domains.block.list.tsv"
+"https://raw.githubusercontent.com/greyhat-academy/lists.d/main/spammers.domains.block.list.tsv",
+"https://raw.githubusercontent.com/cbuijs/oisd/master/big/domains.top-n.adblock"
     ],
     "whitelist_urls": [
 "https://raw.githubusercontent.com/AhaDNS/Aha.Dns.Domains/master/Domains/whitelist.txt",
