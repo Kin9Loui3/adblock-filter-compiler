@@ -4,7 +4,7 @@
 "https://raw.githubusercontent.com/cbuijs/oisd/master/big/domains.top-n.adblock",
 "https://hblock.molinero.dev/hosts_adblock.txt",
 "https://raw.githubusercontent.com/d3ward/toolz/master/src/d3host.txt",
-"https://github.com/pishangujeniya/layman-adlist/raw/main/layman_adlist_hosts.txt"
+"https://gitlab.com/Dev-i-l/the-quantum-ad-list/-/raw/master/For%20hosts%20file/The_Quantum_Ad-List.txt"
     ],
     "whitelist_urls": [
 "https://raw.githubusercontent.com/AhaDNS/Aha.Dns.Domains/master/Domains/whitelist.txt",
