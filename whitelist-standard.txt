@@ -1,9 +1,9 @@
 # Title: Kin9Loui3's Compiled Whitelist
 # Description: Python script that generates adblock filters by combining whitelists, host files, and domain lists.
-# Last Modified: 2023-12-30 01:37:36 
+# Last Modified: 2023-12-30 01:44:25 
 # Domain Count: 171
-# Duplicates Removed: 31
-# Domains Compressed: 169
+# Duplicates Removed: 33
+# Domains Compressed: 167
 #==================================================================
 
 @@||141.207.193.233^
@@ -11,12 +11,13 @@
 @@||1drv.com^
 @@||2.android.pool.ntp.org^
 @@||69.78.33.138^
-@@||ahadns.net^
+@@||a.uguu.se^
+@@||ahadns.com^
 @@||ahadns.org^
 @@||akamaihd.net^
 @@||akamaitechnologies.com^
+@@||akamaized.net^
 @@||allydvm.com^
-@@||amazonaws.com^
 @@||api.epicgames.dev^
 @@||api.ipify.org^
 @@||api.mixpanel.com^
@@ -29,30 +30,38 @@
 @@||assets.adobedtm.com^
 @@||ax.phobos.apple.com.edgesuite.net^
 @@||blocket.se^
+@@||brightcove.net^
 @@||c.s-microsoft.com^
 @@||cdn.cloudflare.net^
 @@||cdn.embedly.com^
+@@||cdn.kuaidi100.com^
 @@||cdn.staticfile.org^
 @@||cdn.stream.schibsted.media^
-@@||cdn2.optimizely.com^
+@@||cdn3.optimizely.com^
 @@||cdnjs.cloudflare.com^
+@@||cert.mgt.xboxlive.com^
 @@||clientconfig.passport.net^
-@@||clients6.google.com^
+@@||clients4.google.com^
 @@||connectivitycheck.android.com^
+@@||cpms35.spop10.ams.plex.bz^
 @@||crl.t-mobile.com^
 @@||crl.tivuon.tv^
 @@||ctldl.windowsupdate.com^
 @@||d2gatte9o95jao.cloudfront.net^
+@@||dashboard.plex.tv^
 @@||dataplicity.com^
 @@||display.ugc.bazaarvoice.com^
 @@||dl.dropbox.com^
 @@||dl.dropboxusercontent.com^
-@@||dnsotls-ds.metric.gstatic.com^
-@@||download.sonarr.tv^
+@@||dns.msftncsi.com^
+@@||dot.nl.ahadns.net^
 @@||drift.com^
 @@||driftt.com^
+@@||dynupdate.no-ip.com^
 @@||eastmoney.com^
+@@||edge.api.brightcove.com^
 @@||eftps.gov^
+@@||epdg.epc.att.net^
 @@||fast.fonts.net^
 @@||flalottery.com^
 @@||flhsmv.gov^
@@ -68,51 +77,43 @@
 @@||goo.gl^
 @@||graph.facebook.com^
 @@||gravatar.com^
-@@||help.ui.xboxlive.com^
 @@||hrpassport.com^
 @@||i.imgur.com^
 @@||i.ytimg.com^
 @@||imagesak.secureserver.net^
+@@||imgix.net^
 @@||imgs.xkcd.com^
 @@||intercom.io^
 @@||ip.me^
-@@||ivory.co.il^
 @@||j.mp^
 @@||jquery.com^
 @@||jsdelivr.net^
 @@||keystone.mwbsys.com^
 @@||lan3rd.line.me^
-@@||lastfm-img2.akamaized.net^
 @@||lgappstv.com^
 @@||lingva.ml^
 @@||litterbox.catbox.moe^
-@@||m.kuaidi100.com^
+@@||login.microsoftonline.com^
 @@||manifest.googlevideo.com^
 @@||maxcdn.bootstrapcdn.com^
-@@||meta-db-worker02.pop.ric.plex.bz^
-@@||microsoftonline.com^
-@@||msftncsi.com^
+@@||metric.gstatic.com^
+@@||nexusrules.officeapps.live.com^
 @@||nine.plugins.plexapp.com^
-@@||no-ip.com^
-@@||noexit.tv^
 @@||nordichardware.se^
 @@||npr-news.streaming.adswizz.com^
 @@||nu.nl^
+@@||office.com^
 @@||office.net^
 @@||om.cbsi.com^
-@@||outlook.live.com^
 @@||outlook.office365.com^
 @@||ow.ly^
 @@||owcpmed.dol.gov^
-@@||pi-dns.com^
 @@||pings.conviva.com^
 @@||placehold.it^
-@@||placeholdit.imgix.net^
-@@||players.brightcove.net^
 @@||playstation.com^
 @@||plex.direct^
+@@||pocketnow.com^
 @@||powerball.com^
-@@||products.office.com^
 @@||rakuten-static.com^
 @@||rakuten.co.jp^
 @@||rakuten.jp^
@@ -123,12 +124,12 @@
 @@||s.amazon-adsystem.com^
 @@||s.marketwatch.com^
 @@||s2.youtube.com^
+@@||s3.amazonaws.com^
 @@||sa.symcb.com^
 @@||safelinking.net^
 @@||secure.avangate.com^
-@@||secure.brightcove.com^
 @@||secure.surveymonkey.com^
-@@||sentitlement2.mobile.att.net^
+@@||services.sonarr.tv^
 @@||sg.vzwfemto.com^
 @@||sheerid.com^
 @@||slack-redir.net^
@@ -145,13 +146,11 @@
 @@||thetvdb.com^
 @@||tinyurl.com^
 @@||traffic.libsyn.com^
-@@||tvdb2.plex.tv^
 @@||tvx.adgrx.com^
 @@||twimg.com^
 @@||typekit.com^
 @@||typekit.net^
 @@||ual.com^
-@@||uguu.se^
 @@||ui.skype.com^
 @@||united.com^
 @@||upload.messenger.com^
@@ -166,13 +165,14 @@
 @@||wp.com^
 @@||ws.audioscrobbler.com^
 @@||www.aboo.se^
-@@||www.ahadns.com^
 @@||www.amazon.com^
 @@||www.bit.ly^
 @@||www.ebay.com^
 @@||www.hrblock.com^
+@@||www.ivory.co.il^
 @@||www.msftconnecttest.com^
-@@||www.pocketnow.com^
+@@||www.noexit.tv^
+@@||www.pi-dns.com^
 @@||www.thelasthunt.com^
 @@||youtu.be^
 @@||youtube-nocookie.com^
