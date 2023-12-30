@@ -135,7 +135,8 @@
 "https://raw.githubusercontent.com/ShadowWhisperer/IPs/master/BruteForce/High",
 "https://raw.githubusercontent.com/dead-hosts/rlwpx.free.fr.htrc_git_FadeMind/master/origin.list",
 "https://raw.githubusercontent.com/dead-hosts/cookies_filters_git_MajkiIT/master/clean.list",
-"https://raw.githubusercontent.com/dead-hosts/.pl-host-file_git_xxcriticxx/master/clean.list"
+"https://raw.githubusercontent.com/dead-hosts/.pl-host-file_git_xxcriticxx/master/clean.list",
+"https://raw.githubusercontent.com/thedoggybrad/easylistadware/main/adwarefilters.txt"
     ],
     "whitelist_urls": [
 "https://raw.githubusercontent.com/AhaDNS/Aha.Dns.Domains/master/Domains/whitelist.txt",
