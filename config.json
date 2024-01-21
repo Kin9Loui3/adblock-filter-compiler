@@ -139,7 +139,8 @@
 "https://raw.githubusercontent.com/Dawsey21/Lists/master/main-blacklist.txt",
 "https://raw.githubusercontent.com/kboghdady/youTube_ads_4_pi-hole/master/crowed_list.txt",
 "https://raw.githubusercontent.com/kboghdady/youTube_ads_4_pi-hole/master/youtubelist.txt",
-"https://raw.githubusercontent.com/neodevpro/neodevhost/master/adblocker"
+"https://raw.githubusercontent.com/neodevpro/neodevhost/master/adblocker",
+"https://github.com/seyyed1332/youtube-ads-block/blob/main/youtube-ads.txt"
     ],
     "whitelist_urls": [
 "https://raw.githubusercontent.com/AhaDNS/Aha.Dns.Domains/master/Domains/whitelist.txt",
