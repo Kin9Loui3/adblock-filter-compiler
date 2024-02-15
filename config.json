@@ -115,7 +115,6 @@
 "https://blocklistproject.github.io/Lists/scam.txt",
 "https://blocklistproject.github.io/Lists/ransomware.txt",
 "https://gitlab.com/Dev-i-l/the-quantum-ad-list/-/raw/master/For%20hosts%20file/The_Quantum_Ad-List.txt",
-"https://gitlab.com/The_Quantum_Alpha/the-quantum-ad-list/-/raw/master/Individual%20lists/The_Quantum_Youtube-Ads-List.txt",
 "https://raw.githubusercontent.com/bongochong/CombinedPrivacyBlockLists/master/NoFormatting/BlacklistedDomains.txt",
 "https://raw.githubusercontent.com/AdguardTeam/cname-trackers/master/data/combined_disguised_ads.txt",
 "https://raw.githubusercontent.com/AdguardTeam/cname-trackers/master/data/combined_disguised_clickthroughs.txt",
@@ -141,12 +140,8 @@
 "https://raw.githubusercontent.com/dead-hosts/.pl-host-file_git_xxcriticxx/master/clean.list",
 "https://raw.githubusercontent.com/thedoggybrad/easylistadware/main/adwarefilters.txt",
 "https://raw.githubusercontent.com/Dawsey21/Lists/master/main-blacklist.txt",
-"https://raw.githubusercontent.com/kboghdady/youTube_ads_4_pi-hole/master/crowed_list.txt",
-"https://raw.githubusercontent.com/kboghdady/youTube_ads_4_pi-hole/master/youtubelist.txt",
 "https://raw.githubusercontent.com/neodevpro/neodevhost/master/adblocker",
-"https://github.com/seyyed1332/youtube-ads-block/blob/main/youtube-ads.txt",
-"https://raw.githubusercontent.com/LaurentFough/pihole-youtube-adblock/master/pihole-youtube-adblock.txt",
-"https://raw.githubusercontent.com/Ewpratten/youtube_ad_blocklist/master/blocklist.txt"
+"https://raw.githubusercontent.com/seyyed1332/youtube-ads-block/main/youtube-ads.txt",
     ],
     "whitelist_urls": [
 "https://raw.githubusercontent.com/AhaDNS/Aha.Dns.Domains/master/Domains/whitelist.txt",
