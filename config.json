@@ -141,7 +141,7 @@
 "https://raw.githubusercontent.com/thedoggybrad/easylistadware/main/adwarefilters.txt",
 "https://raw.githubusercontent.com/Dawsey21/Lists/master/main-blacklist.txt",
 "https://raw.githubusercontent.com/neodevpro/neodevhost/master/adblocker",
-"https://raw.githubusercontent.com/seyyed1332/youtube-ads-block/main/youtube-ads.txt",
+"https://raw.githubusercontent.com/seyyed1332/youtube-ads-block/main/youtube-ads.txt"
     ],
     "whitelist_urls": [
 "https://raw.githubusercontent.com/AhaDNS/Aha.Dns.Domains/master/Domains/whitelist.txt",
