@@ -66,8 +66,11 @@
 "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/dyndns.txt",
 "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/nosafesearch.txt",
 "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/doh.txt",
+"https://raw.githubusercontent.com/hagezi/dns-blocklists/main/hosts/native.apple.txt",
 "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/native.tiktok.txt",
+"https://raw.githubusercontent.com/hagezi/dns-blocklists/main/hosts/native.tiktok.extended.txt",
 "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/native.winoffice.txt",
+"https://raw.githubusercontent.com/hagezi/dns-blocklists/main/hosts/native.xiaomi.txt",
 "https://raw.githubusercontent.com/KnightmareVIIVIIXC/AIO-Firebog-Blocklists/main/lists/firebogad.txt",
 "https://raw.githubusercontent.com/AdroitAdorKhan/antipopads-re/master/formats/domains.txt",
 "https://raw.githubusercontent.com/anudeepND/blacklist/master/adservers.txt",
@@ -78,7 +81,6 @@
 "https://raw.githubusercontent.com/manic-code/Emerging-Malicious-Domain-Blocklist/main/hosts.txt",
 "https://threatfox.abuse.ch/downloads/hostfile",
 "https://threatview.io/Downloads/DOMAIN-High-Confidence-Feed.txt",
-"https://raw.githubusercontent.com/taichikuji/youtube-ads-4-adaway/master/hosts",
 "https://www.github.developerdan.com/hosts/lists/amp-hosts-extended.txt",
 "https://www.github.developerdan.com/hosts/lists/ads-and-tracking-extended.txt",
 "https://raw.githubusercontent.com/ShadowWhisperer/IPs/master/BruteForce/Extreme",
@@ -139,8 +141,7 @@
 "https://raw.githubusercontent.com/dead-hosts/.pl-host-file_git_xxcriticxx/master/clean.list",
 "https://raw.githubusercontent.com/thedoggybrad/easylistadware/main/adwarefilters.txt",
 "https://raw.githubusercontent.com/Dawsey21/Lists/master/main-blacklist.txt",
-"https://raw.githubusercontent.com/neodevpro/neodevhost/master/adblocker",
-"https://raw.githubusercontent.com/seyyed1332/youtube-ads-block/main/youtube-ads.txt"
+"https://raw.githubusercontent.com/neodevpro/neodevhost/master/adblocker"
     ],
     "whitelist_urls": [
 "https://raw.githubusercontent.com/AhaDNS/Aha.Dns.Domains/master/Domains/whitelist.txt",
