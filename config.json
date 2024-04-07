@@ -67,6 +67,7 @@
 "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/nosafesearch.txt",
 "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/doh.txt",
 "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/hosts/native.apple.txt",
+"https://raw.githubusercontent.com/hagezi/dns-blocklists/main/hosts/native.amazon.txt",
 "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/native.tiktok.txt",
 "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/hosts/native.tiktok.extended.txt",
 "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/native.winoffice.txt",
