@@ -60,6 +60,7 @@
 "https://raw.githubusercontent.com/marco-acorte/antispam-it/main/antispam-it.txt",
 "https://raw.githubusercontent.com/matomo-org/referrer-spam-blacklist/master/spammers.txt",
 "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/pro.txt",
+"https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/tif.medium.txt",
 "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/popupads.txt",
 "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/doh-vpn-proxy-bypass.txt",
 "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/hoster.txt",
