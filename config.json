@@ -152,7 +152,11 @@
 "https://raw.githubusercontent.com/danielcuthbert/trackers/master/mobilegames.txt",
 "https://raw.githubusercontent.com/JLospinoso/doh/master/block/adaway.org.txt",
 "https://raw.githubusercontent.com/Ewpratten/youtube_ad_blocklist/master/blocklist.txt",
-"https://raw.githubusercontent.com/LaurentFough/pihole-youtube-adblock/master/pihole-youtube-adblock.txt"
+"https://raw.githubusercontent.com/LaurentFough/pihole-youtube-adblock/master/pihole-youtube-adblock.txt",
+"https://adguardteam.github.io/HostlistsRegistry/assets/filter_24.txt",
+"https://adguardteam.github.io/HostlistsRegistry/assets/filter_39.txt",
+"https://adguardteam.github.io/HostlistsRegistry/assets/filter_53.txt",
+"https://adguardteam.github.io/HostlistsRegistry/assets/filter_59.txt"
     ],
     "whitelist_urls": [
 "https://raw.githubusercontent.com/AhaDNS/Aha.Dns.Domains/master/Domains/whitelist.txt",
