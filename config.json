@@ -159,7 +159,8 @@
 "https://adguardteam.github.io/HostlistsRegistry/assets/filter_59.txt",
 "https://hosts.tweedge.net/malicious.txt",
 "https://hosts.tweedge.net/suspicious.txt",
-"https://hosts.tweedge.net/informational.txt"
+"https://hosts.tweedge.net/informational.txt",
+"https://raw.githubusercontent.com/touhidurrr/iplist-youtube/main/ipv4_list.txt"
     ],
     "whitelist_urls": [
 "https://raw.githubusercontent.com/AhaDNS/Aha.Dns.Domains/master/Domains/whitelist.txt",
