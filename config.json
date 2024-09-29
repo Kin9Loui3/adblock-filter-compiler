@@ -160,7 +160,7 @@
 "https://hosts.tweedge.net/malicious.txt",
 "https://hosts.tweedge.net/suspicious.txt",
 "https://hosts.tweedge.net/informational.txt",
-"https://raw.githubusercontent.com/touhidurrr/iplist-youtube/main/ipv4_list.txt"
+"https://raw.githubusercontent.com/spxiar/ytadblock/refs/heads/main/list"
     ],
     "whitelist_urls": [
 "https://raw.githubusercontent.com/AhaDNS/Aha.Dns.Domains/master/Domains/whitelist.txt",
