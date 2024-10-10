@@ -157,7 +157,12 @@
 "https://adguardteam.github.io/HostlistsRegistry/assets/filter_59.txt",
 "https://hosts.tweedge.net/malicious.txt",
 "https://hosts.tweedge.net/suspicious.txt",
-"https://hosts.tweedge.net/informational.txt"
+"https://hosts.tweedge.net/informational.txt",
+"https://ente.dev/api/blocklist/youtube-advertising-hosts",
+"https://ente.dev/api/blocklist/google-amp-hosts",
+"https://ente.dev/api/blocklist/advertising-hosts",
+"https://ente.dev/api/blocklist/suspicious-hosts",
+"https://ente.dev/api/blocklist/tv-hosts"
     ],
     "whitelist_urls": [
 "https://raw.githubusercontent.com/AhaDNS/Aha.Dns.Domains/master/Domains/whitelist.txt",
