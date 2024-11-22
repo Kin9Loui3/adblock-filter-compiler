@@ -84,8 +84,6 @@
 "https://raw.githubusercontent.com/manic-code/Emerging-Malicious-Domain-Blocklist/main/hosts.txt",
 "https://threatfox.abuse.ch/downloads/hostfile",
 "https://threatview.io/Downloads/DOMAIN-High-Confidence-Feed.txt",
-"https://www.github.developerdan.com/hosts/lists/amp-hosts-extended.txt",
-"https://www.github.developerdan.com/hosts/lists/ads-and-tracking-extended.txt",
 "https://raw.githubusercontent.com/ShadowWhisperer/IPs/master/BruteForce/Extreme",
 "https://raw.githubusercontent.com/ShadowWhisperer/IPs/master/Malware/Hosting",
 "https://raw.githubusercontent.com/bongochong/CombinedPrivacyBlockLists/master/ABP2Hosts/disconnect_consolidated.txt",
