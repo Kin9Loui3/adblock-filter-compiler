@@ -57,7 +57,7 @@
 "https://raw.githubusercontent.com/scafroglia93/blocklists/master/blocklists-akamai.txt",
 "https://raw.githubusercontent.com/infinitytec/blocklists/master/scams-and-phishing.txt",
 "https://raw.githubusercontent.com/infinitytec/blocklists/master/clickbait.txt",
-"https://raw.githubusercontent.com/jarelllama/Scam-Blocklist/main/lists/adblock/scams.txt",
+"https://raw.githubusercontent.com/jarelllama/Scam-Blocklist/refs/heads/main/lists/adblock/scams_light.txt",
 "https://raw.githubusercontent.com/marco-acorte/antispam-it/main/antispam-it.txt",
 "https://raw.githubusercontent.com/matomo-org/referrer-spam-blacklist/master/spammers.txt",
 "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/pro.plus.mini.txt",
