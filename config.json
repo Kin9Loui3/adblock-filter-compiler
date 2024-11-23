@@ -140,7 +140,10 @@
 "https://raw.githubusercontent.com/thedoggybrad/easylistadware/main/adwarefilters.txt",
 "https://raw.githubusercontent.com/Dawsey21/Lists/master/main-blacklist.txt",
 "https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/MobileFilter/sections/adservers.txt",
-"https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/SpywareFilter/sections/mobile.txt"
+"https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/SpywareFilter/sections/mobile.txt",
+"https://raw.githubusercontent.com/r-a-y/mobile-hosts/master/AdguardMobileSpyware.txt",
+"https://raw.githubusercontent.com/danielcuthbert/trackers/master/mobilegames.txt",
+"https://raw.githubusercontent.com/JLospinoso/doh/master/block/adaway.org.txt"
     ],
     "whitelist_urls": [
 "https://raw.githubusercontent.com/AhaDNS/Aha.Dns.Domains/master/Domains/whitelist.txt",
