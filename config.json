@@ -137,7 +137,6 @@
 "https://raw.githubusercontent.com/ShadowWhisperer/IPs/master/Other/Scanners",
 "https://raw.githubusercontent.com/ShadowWhisperer/IPs/master/BruteForce/Medium",
 "https://raw.githubusercontent.com/ShadowWhisperer/IPs/master/BruteForce/High",
-"https://raw.githubusercontent.com/dead-hosts/rlwpx.free.fr.htrc_git_FadeMind/master/origin.list",
 "https://raw.githubusercontent.com/dead-hosts/cookies_filters_git_MajkiIT/master/clean.list",
 "https://raw.githubusercontent.com/dead-hosts/.pl-host-file_git_xxcriticxx/master/clean.list",
 "https://raw.githubusercontent.com/thedoggybrad/easylistadware/main/adwarefilters.txt",
@@ -155,6 +154,7 @@
 "https://hosts.tweedge.net/suspicious.txt",
 "https://hosts.tweedge.net/informational.txt",
 "https://ente.dev/api/blocklist/youtube-advertising-hosts",
+"https://ente.dev/api/blocklist/advertising-hosts",
 "https://ente.dev/api/blocklist/google-amp-hosts",
 "https://ente.dev/api/blocklist/suspicious-hosts",
 "https://ente.dev/api/blocklist/tv-hosts"
