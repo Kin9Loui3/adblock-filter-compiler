@@ -143,19 +143,7 @@
 "https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/SpywareFilter/sections/mobile.txt",
 "https://raw.githubusercontent.com/r-a-y/mobile-hosts/master/AdguardMobileSpyware.txt",
 "https://raw.githubusercontent.com/danielcuthbert/trackers/master/mobilegames.txt",
-"https://raw.githubusercontent.com/JLospinoso/doh/master/block/adaway.org.txt",
-"https://adguardteam.github.io/HostlistsRegistry/assets/filter_24.txt",
-"https://adguardteam.github.io/HostlistsRegistry/assets/filter_39.txt",
-"https://adguardteam.github.io/HostlistsRegistry/assets/filter_53.txt",
-"https://adguardteam.github.io/HostlistsRegistry/assets/filter_59.txt",
-"https://hosts.tweedge.net/malicious.txt",
-"https://hosts.tweedge.net/suspicious.txt",
-"https://hosts.tweedge.net/informational.txt",
-"https://ente.dev/api/blocklist/youtube-advertising-hosts",
-"https://ente.dev/api/blocklist/advertising-hosts",
-"https://ente.dev/api/blocklist/google-amp-hosts",
-"https://ente.dev/api/blocklist/suspicious-hosts",
-"https://ente.dev/api/blocklist/tv-hosts"
+"https://raw.githubusercontent.com/JLospinoso/doh/master/block/adaway.org.txt"
     ],
     "whitelist_urls": [
 "https://raw.githubusercontent.com/AhaDNS/Aha.Dns.Domains/master/Domains/whitelist.txt",
