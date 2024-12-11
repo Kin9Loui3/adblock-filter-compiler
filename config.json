@@ -108,7 +108,7 @@
 "https://raw.githubusercontent.com/craiu/piholelists/main/kasap.txt",
 "https://raw.githubusercontent.com/craiu/mobiletrackers/master/windowslist.txt",
 "https://v.firebog.net/hosts/static/w3kbl.txt",
-"https://raw.githubusercontent.com/d3ward/toolz/master/src/d3host.txt",
+"https://raw.githubusercontent.com/d3ward/toolz/master/src/d3host.adblock",
 "https://osint.digitalside.it/Threat-Intel/lists/latestdomains.txt",
 "https://raw.githubusercontent.com/InAUGral/pihole-blocklist-gametrackers/main/pihole-blocklist-gametrackers.txt",
 "https://raw.githubusercontent.com/mullvad/dns-blocklists/main/lists/doh/privacy/telemetry-xiaomi",
