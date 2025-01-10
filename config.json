@@ -41,6 +41,7 @@
 "https://raw.githubusercontent.com/mitchellkrogza/nginx-ultimate-bad-bot-blocker/master/_generator_lists/bad-ip-addresses.list",
 "https://hostfiles.frogeye.fr/firstparty-trackers-hosts.txt",
 "https://hostfiles.frogeye.fr/multiparty-trackers-hosts.txt",
+"https://v.firebog.net/hosts/Prigent-Crypto.txt",
 "https://zerodot1.gitlab.io/CoinBlockerLists/hosts_browser",
 "https://zerodot1.gitlab.io/CoinBlockerLists/hosts_optional",
 "https://raw.githubusercontent.com/RooneyMcNibNug/pihole-stuff/master/SNAFU.txt",
