@@ -163,7 +163,8 @@
 "https://raw.githubusercontent.com/taichikuji/youTube-ads-4-adaway/master/hosts",
 "https://raw.githubusercontent.com/hl2guide/curated-adblock-lists/main/lists/gaming.txt",
 "https://raw.githubusercontent.com/Werewolfke/AD-BlockList/main/BlockList/BlockList_V1.txt",
-"https://raw.githubusercontent.com/bigdargon/hostsVN/master/hosts"
+"https://raw.githubusercontent.com/bigdargon/hostsVN/master/hosts",
+"https://raw.githubusercontent.com/8680/GOODBYEADS/master/data/rules/dns.txt"
     ],
     "whitelist_urls": [
 "https://raw.githubusercontent.com/AhaDNS/Aha.Dns.Domains/master/Domains/whitelist.txt",
