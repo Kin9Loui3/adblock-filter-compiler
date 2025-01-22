@@ -160,7 +160,8 @@
 "https://ente.dev/api/blocklist/google-amp-hosts",
 "https://ente.dev/api/blocklist/tv-hosts",
 "https://raw.githubusercontent.com/badmojr/1Hosts/master/Lite/adblock.txt",
-"https://raw.githubusercontent.com/taichikuji/youTube-ads-4-adaway/master/hosts"
+"https://raw.githubusercontent.com/taichikuji/youTube-ads-4-adaway/master/hosts",
+"https://raw.githubusercontent.com/hl2guide/curated-adblock-lists/main/lists/gaming.txt"
     ],
     "whitelist_urls": [
 "https://raw.githubusercontent.com/AhaDNS/Aha.Dns.Domains/master/Domains/whitelist.txt",
