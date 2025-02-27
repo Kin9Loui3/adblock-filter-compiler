@@ -83,5 +83,5 @@
 "https://paulgb.github.io/BarbBlock/blacklists/hosts-file.txt",
 "https://raw.githubusercontent.com/KnightmareVIIVIIXC/AIO-Firebog-Blocklists/main/lists/firebogother.txt"
     ],
-    "whitelist_filename": "blacklist-personal-part-1.txt"
+    "blacklist_filename": "blacklist-personal-part-1.txt"
 }
