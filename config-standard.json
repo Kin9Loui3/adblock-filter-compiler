@@ -4,7 +4,8 @@
 "https://raw.githubusercontent.com/cbuijs/oisd/master/big/domains.top-n.adblock",
 "https://hblock.molinero.dev/hosts_adblock.txt",
 "https://raw.githubusercontent.com/hectorm/hmirror/master/data/d3host/list.txt",
-"https://raw.githubusercontent.com/jerryn70/GoodbyeAds/master/Extension/GoodbyeAds-Spotify-AdBlock.txt"
+"https://raw.githubusercontent.com/jerryn70/GoodbyeAds/master/Extension/GoodbyeAds-Spotify-AdBlock.txt",
+"https://raw.githubusercontent.com/r-a-y/mobile-hosts/master/AdguardMobileSpyware.txt"
     ],
     "whitelist_urls": [
 "https://raw.githubusercontent.com/AhaDNS/Aha.Dns.Domains/master/Domains/whitelist.txt",
