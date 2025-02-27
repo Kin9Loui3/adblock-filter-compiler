@@ -163,7 +163,13 @@
 "https://raw.githubusercontent.com/hl2guide/curated-adblock-lists/main/lists/gaming.txt",
 "https://raw.githubusercontent.com/Werewolfke/AD-BlockList/main/BlockList/BlockList_V1.txt",
 "https://raw.githubusercontent.com/bigdargon/hostsVN/master/hosts",
-"https://raw.githubusercontent.com/8680/GOODBYEADS/master/data/rules/dns.txt"
+"https://raw.githubusercontent.com/8680/GOODBYEADS/master/data/rules/dns.txt",
+"https://rescure.me/rescure_domain_blacklist.txt",
+"https://gitlab.com/quidsup/notrack-blocklists/-/raw/master/malware.list",
+"https://gitlab.com/quidsup/notrack-blocklists/-/raw/master/trackers.list",
+"https://raw.githubusercontent.com/jerryn70/GoodbyeAds/master/Extension/GoodbyeAds-Spotify-AdBlock.txt",
+"https://raw.githubusercontent.com/tiuxo/hosts/master/ads",
+"https://s3.amazonaws.com/lists.disconnect.me/simple_ad.txt"
     ],
     "whitelist_urls": [
 "https://raw.githubusercontent.com/AhaDNS/Aha.Dns.Domains/master/Domains/whitelist.txt",
