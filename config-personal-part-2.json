@@ -83,5 +83,5 @@
 "https://raw.githubusercontent.com/bigdargon/hostsVN/master/hosts",
 "https://raw.githubusercontent.com/8680/GOODBYEADS/master/data/rules/dns.txt"
     ],
-    "whitelist_filename": "blacklist-personal-part-2.txt"
+    "blacklist_filename": "blacklist-personal-part-2.txt"
 }
