@@ -178,5 +178,5 @@
 "https://corefusion.xyz/whitelist.txt"
     ],
     "blacklist_filename": "blacklist.txt",
-    "whitelist_filename": "whitelist2.txt"
+    "whitelist_filename": "whitelist.txt"
 }
