@@ -6,12 +6,13 @@ import os
 
 # Pre-compiled regular expression for performance
 domain_regex = re.compile(
-    r"^(?:[a-z0-9](?:[a-z0-9-]{0,61}[a-z0-9])?\.)+[a-z0-9][a-z0-9-]{0,61}[a-z0-9]$"
+    r"^(?:(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){3}(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)"  # IP check
+    r"|(?:[a-z0-9](?:[a-z0-9-]{0,61}[a-z0-9])?\.)+[a-z0-9][a-z0-9-]{0,61}[a-z0-9]$"  # Domain
 )
 
 def is_valid_domain(domain):
     """Checks if a string is a valid domain."""
-    return bool(domain_regex.match(domain))
+    return bool(domain_regex.fullmatch(domain))
 
 def parse_hosts_file(content):
     """Parses a host file content into AdBlock rules."""
@@ -43,11 +44,10 @@ def generate_filter(file_contents, filter_type):
     redundant_rules_removed = 0
     
     for content in file_contents:
-        adblock_rules = parse_hosts_file(content)
-        for rule in adblock_rules:
-            domain = rule[2:-1]  # Remove '||' and '^'
-            base_domain = domain.split('.')[-2:]  # Get the base domain (last two parts)
-            base_domain = '.'.join(base_domain)
+        for rule in parse_hosts_file(content):
+								  
+            domain = rule[2:-1]
+            base_domain = '.'.join(domain.rsplit('.', 2)[-2:])
             if rule not in adblock_rules_set and base_domain not in base_domain_set:
                 adblock_rules_set.add(rule)
                 base_domain_set.add(base_domain)
