@@ -1,7 +1,0 @@
-# Title: Kin9Loui3's Compiled Blacklist
-# Description: Python script that generates adblock filters by combining blacklists, host files, and domain lists.
-# Last Modified: 2025-04-27 07:55:07 
-# Domain Count: 0
-# Duplicates Removed: 0
-# Domains Compressed: 0
-#==================================================================
