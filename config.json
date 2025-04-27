@@ -171,6 +171,6 @@
 "https://raw.githubusercontent.com/tiuxo/hosts/master/ads",
 "https://s3.amazonaws.com/lists.disconnect.me/simple_ad.txt"
     ],
-    "blacklist_filename": "blacklist.txt",
+    "blacklist_filename": "blacklist.txt"
 }
 
