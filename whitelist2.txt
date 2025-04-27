@@ -1,9 +1,9 @@
 # Title: Kin9Loui3's Compiled Whitelist
 # Description: Python script that generates adblock filters by combining whitelists, host files, and domain lists.
-# Last Modified: 2025-04-25 18:21:45 
+# Last Modified: 2025-04-27 06:21:42 
 # Domain Count: 171
-# Duplicates Removed: 26
-# Domains Compressed: 160
+# Duplicates Removed: 24
+# Domains Compressed: 162
 #==================================================================
 
 @@||141.207.193.233^
@@ -11,8 +11,8 @@
 @@||1drv.com^
 @@||2.android.pool.ntp.org^
 @@||69.78.33.138^
-@@||a.uguu.se^
 @@||aboo.se^
+@@||ahadns.net^
 @@||ahadns.org^
 @@||akamaihd.net^
 @@||akamaitechnologies.com^
@@ -24,47 +24,45 @@
 @@||api.mixpanel.com^
 @@||api.rlje.net^
 @@||app.adjust.com^
-@@||apps.skype.com^
 @@||aspnetcdn.com^
 @@||assets.adobedtm.com^
 @@||ax.phobos.apple.com.edgesuite.net^
-@@||brightcove.net^
+@@||blocket.se^
 @@||c.s-microsoft.com^
 @@||cdn.cloudflare.net^
 @@||cdn.embedly.com^
 @@||cdn.optimizely.com^
 @@||cdn.staticfile.org^
 @@||cdn.stream.schibsted.media^
-@@||cdn.vidible.tv^
 @@||cdnjs.cloudflare.com^
-@@||cert.mgt.xboxlive.com^
 @@||clientconfig.passport.net^
+@@||clients6.google.com^
 @@||connectivitycheck.android.com^
+@@||continuum.dds.microsoft.com^
 @@||cpms.spop10.ams.plex.bz^
+@@||crl.t-mobile.com^
 @@||crl.tivuon.tv^
-@@||cse.google.com^
 @@||ctldl.windowsupdate.com^
 @@||d2gatte9o95jao.cloudfront.net^
+@@||dataplicity.com^
+@@||dev.virtualearth.net^
 @@||display.ugc.bazaarvoice.com^
-@@||dl.delivery.mp.microsoft.com^
 @@||dl.dropbox.com^
 @@||dl.dropboxusercontent.com^
-@@||dnsotls-ds.metric.gstatic.com^
-@@||dot.nl.ahadns.net^
+@@||download.sonarr.tv^
 @@||drift.com^
 @@||driftt.com^
-@@||dynupdate.no-ip.com^
-@@||eas3.msg.t-mobile.com^
 @@||eastmoney.com^
 @@||edge.api.brightcove.com^
+@@||eds.xboxlive.com^
 @@||eftps.gov^
-@@||epdg.epc.att.net^
+@@||epdg.epc.mnc240.mcc310.pub.3gppnetwork.org^
 @@||fast.com^
 @@||fast.fonts.net^
+@@||files.catbox.moe^
 @@||files.shroomery.org^
 @@||flalottery.com^
 @@||flhsmv.gov^
-@@||forums.sonarr.tv^
 @@||full.pr0gramm.com^
 @@||g.udimg.com^
 @@||gfwsl.geforce.com^
@@ -74,7 +72,6 @@
 @@||go.ro^
 @@||godaddy.com^
 @@||goo.gl^
-@@||graph.facebook.com^
 @@||gravatar.com^
 @@||hls.ted.com^
 @@||hrblock.com^
@@ -82,9 +79,7 @@
 @@||i.ibb.co^
 @@||i.imgur.com^
 @@||imagesak.secureserver.net^
-@@||imgix.net^
 @@||imgs.xkcd.com^
-@@||instantmessaging-pa.googleapis.com^
 @@||intercom.io^
 @@||ip.me^
 @@||ivory.co.il^
@@ -92,18 +87,16 @@
 @@||jquery.com^
 @@||jsdelivr.net^
 @@||keystone.mwbsys.com^
+@@||kuaidi100.com^
 @@||lan3rd.line.me^
 @@||lgappstv.com^
-@@||litterbox.catbox.moe^
-@@||m.kuaidi100.com^
+@@||login.microsoftonline.com^
 @@||manifest.googlevideo.com^
 @@||maxcdn.bootstrapcdn.com^
-@@||meta.plex.tv^
-@@||microsoftonline.com^
+@@||metric.gstatic.com^
 @@||msftncsi.com^
-@@||my.plexapp.com^
 @@||nexusrules.officeapps.live.com^
-@@||nordichardware.se^
+@@||noexit.tv^
 @@||npr-news.streaming.adswizz.com^
 @@||nu.nl^
 @@||ocsp.apple.com^
@@ -113,11 +106,12 @@
 @@||om.cbsi.com^
 @@||ow.ly^
 @@||owcpmed.dol.gov^
-@@||pi-dns.com^
 @@||placehold.it^
+@@||placeholdit.imgix.net^
+@@||players.brightcove.net^
 @@||plex.direct^
-@@||pocketnow.com^
 @@||powerball.com^
+@@||pricelist.skype.com^
 @@||rakuten-card.co.jp^
 @@||rakuten-static.com^
 @@||rakuten.jp^
@@ -134,16 +128,15 @@
 @@||safelinking.net^
 @@||secure.avangate.com^
 @@||secure.surveymonkey.com^
+@@||sentitlement2.mobile.att.net^
 @@||sg.vzwfemto.com^
 @@||sheerid.com^
 @@||slack-redir.net^
 @@||spclient.wg.spotify.com^
 @@||spg.vzw.com^
-@@||ss.epdg.epc.mnc260.mcc310.pub.3gppnetwork.org^
 @@||ssl.p.jwpcdn.com^
 @@||status.ahadns.com^
 @@||t.co^
-@@||t0.ssl.ak.tiles.virtualearth.net^
 @@||tawk.to^
 @@||tedcdn.com^
 @@||themoviedb.com^
@@ -151,15 +144,19 @@
 @@||thetvdb.com^
 @@||tinyurl.com^
 @@||traffic.libsyn.com^
+@@||tvdb2.plex.tv^
+@@||tvthemes.plexapp.com^
 @@||twimg.com^
 @@||typekit.com^
 @@||typekit.net^
 @@||ual.com^
+@@||uguu.se^
 @@||united.com^
 @@||upload.messenger.com^
 @@||upload.wikimedia.org^
 @@||use.fontawesome.com^
 @@||vanilla.futurecdn.net^
+@@||videos.vidible.tv^
 @@||vidtech.cbsinteractive.com^
 @@||walmart.com^
 @@||widget-cdn.rpxnow.com^
@@ -167,11 +164,14 @@
 @@||ws.audioscrobbler.com^
 @@||www.amazon.com^
 @@||www.bit.ly^
-@@||www.blocket.se^
-@@||www.dataplicity.com^
 @@||www.ebay.com^
+@@||www.facebook.com^
+@@||www.googleapis.com^
 @@||www.msftconnecttest.com^
-@@||www.noexit.tv^
+@@||www.no-ip.com^
+@@||www.nordichardware.se^
+@@||www.pi-dns.com^
+@@||www.pocketnow.com^
 @@||www.thelasthunt.com^
 @@||youtu.be^
 @@||youtube-nocookie.com^
