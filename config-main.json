@@ -54,7 +54,7 @@
 "https://raw.githubusercontent.com/Snota418/Youtube-spam-host-list/main/Crypto%20streams",
 "https://raw.githubusercontent.com/Snota418/Youtube-spam-host-list/main/General%20phishing",
 "https://bitbucket.org/ethanr/dns-blacklists/raw/8575c9f96e5b4a1308f2f12394abd86d0927a4a0/bad_lists/Mandiant_APT1_Report_Appendix_D.txt",
-"https://cdn.sefinek.net/resources/PiHole-Blocklist-Collection/blocklist/useless-websites.txt",
+"https://blocklist.sefinek.net/generated/v1/0.0.0.0/useless-websites/sefinek.hosts.txt",
 "https://raw.githubusercontent.com/jumpsmm7/GeneratedAdblock/master/IPlist.list",
 "https://raw.githubusercontent.com/scafroglia93/blocklists/master/blocklists-stats.txt",
 "https://raw.githubusercontent.com/scafroglia93/blocklists/master/blocklists-akamai.txt",
@@ -155,7 +155,7 @@
 "https://hosts.tweedge.net/malicious.txt",
 "https://hosts.tweedge.net/suspicious.txt",
 "https://hosts.tweedge.net/informational.txt",
-"https://ente.dev/api/blocklist/youtube-advertising-hosts",
+"https://ente.dev/api/blocklist/suspicious",
 "https://ente.dev/api/blocklist/advertising-hosts",
 "https://ente.dev/api/blocklist/google-amp-hosts",
 "https://ente.dev/api/blocklist/tv-hosts",
@@ -168,6 +168,7 @@
 "https://gitlab.com/quidsup/notrack-blocklists/-/raw/master/trackers.list",
 "https://raw.githubusercontent.com/jerryn70/GoodbyeAds/master/Extension/GoodbyeAds-Spotify-AdBlock.txt",
 "https://raw.githubusercontent.com/tiuxo/hosts/master/ads",
+"https://raw.githubusercontent.com/bigdargon/hostsVN/master/hosts",
 "https://s3.amazonaws.com/lists.disconnect.me/simple_ad.txt"
     ],
     "whitelist_urls": [
