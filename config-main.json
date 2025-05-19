@@ -82,7 +82,7 @@
 "https://raw.githubusercontent.com/LanikSJ/ubo-filters/main/filters/getadmiral-domains.txt",
 "https://paulgb.github.io/BarbBlock/blacklists/hosts-file.txt",
 "https://raw.githubusercontent.com/KnightmareVIIVIIXC/AIO-Firebog-Blocklists/main/hostslists/kees1958topadstrackers.txt",
-"https://raw.githubusercontent.com/AdroitAdorKhan/antipopads-re/master/formats/domains.txt",
+"https://raw.githubusercontent.com/AdroitAdorKhan/antipopads-re/master/formats/domains.txt"
     ],
     "whitelist_urls": [
 "https://raw.githubusercontent.com/AhaDNS/Aha.Dns.Domains/master/Domains/whitelist.txt",
