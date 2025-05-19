@@ -43,8 +43,7 @@
 "https://hostfiles.frogeye.fr/firstparty-onely-trackers-hosts.txt",
 "https://hostfiles.frogeye.fr/multiparty-only-trackers-hosts.txt",
 "https://v.firebog.net/hosts/Prigent-Crypto.txt",
-"https://zerodot1.gitlab.io/CoinBlockerLists/hosts_browser",
-"https://zerodot1.gitlab.io/CoinBlockerLists/hosts_optional",
+"https://raw.githubusercontent.com/WillPresley/ZeroDot1_CoinBlockerList/main/hosts",
 "https://raw.githubusercontent.com/RooneyMcNibNug/pihole-stuff/master/SNAFU.txt",
 "https://raw.githubusercontent.com/FadeMind/hosts.extras/master/UncheckyAds/hosts",
 "https://raw.githubusercontent.com/FadeMind/hosts.extras/master/add.Risk/hosts",
@@ -167,7 +166,8 @@
 "https://raw.githubusercontent.com/jerryn70/GoodbyeAds/master/Extension/GoodbyeAds-Spotify-AdBlock.txt",
 "https://raw.githubusercontent.com/tiuxo/hosts/master/ads",
 "https://raw.githubusercontent.com/bigdargon/hostsVN/master/hosts",
-"https://s3.amazonaws.com/lists.disconnect.me/simple_ad.txt"
+"https://s3.amazonaws.com/lists.disconnect.me/simple_ad.txt",
+"https://raw.githubusercontent.com/Ultimate-Hosts-Blacklist/Ultimate.Hosts.Blacklist/master/hosts/hosts3"
     ],
     "whitelist_urls": [
 "https://raw.githubusercontent.com/AhaDNS/Aha.Dns.Domains/master/Domains/whitelist.txt",
