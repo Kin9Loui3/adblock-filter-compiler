@@ -169,7 +169,7 @@
 "https://raw.githubusercontent.com/tiuxo/hosts/master/ads",
 "https://s3.amazonaws.com/lists.disconnect.me/simple_ad.txt",
 "https://raw.githubusercontent.com/Ultimate-Hosts-Blacklist/Ultimate.Hosts.Blacklist/master/hosts/hosts3",
-"https://github.com/spmedia/Crypto-Scam-and-Crypto-Phishing-Threat-Intel-Feed/blob/main/detected_urls.txt"
+"https://raw.githubusercontent.com/spmedia/Crypto-Scam-and-Crypto-Phishing-Threat-Intel-Feed/main/detected_urls.txt"
     ],
     "whitelist_urls": [
 "https://raw.githubusercontent.com/AhaDNS/Aha.Dns.Domains/master/Domains/whitelist.txt",
