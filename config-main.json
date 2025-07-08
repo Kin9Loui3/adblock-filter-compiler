@@ -186,7 +186,11 @@
 "https://raw.githubusercontent.com/tiuxo/hosts/master/ads",
 "https://s3.amazonaws.com/lists.disconnect.me/simple_ad.txt",
 "https://raw.githubusercontent.com/Ultimate-Hosts-Blacklist/Ultimate.Hosts.Blacklist/master/hosts/hosts3",
-"https://raw.githubusercontent.com/spmedia/Crypto-Scam-and-Crypto-Phishing-Threat-Intel-Feed/main/detected_urls.txt"
+"https://raw.githubusercontent.com/spmedia/Crypto-Scam-and-Crypto-Phishing-Threat-Intel-Feed/main/detected_urls.txt",
+"https://github.com/greyhat-academy/lists.d/blob/main/scrapers.ipv4.block.list.tsv",
+"https://git.flossboxin.org.in/vdbhb59/hosts/raw/branch/main/ip_spamlist.txt",
+"https://git.flossboxin.org.in/vdbhb59/hosts/raw/branch/main/number%20spamlists.txt",
+"https://raw.githubusercontent.com/TimTheBig/the_big_list_for_pi-hole/refs/heads/main/big_block_list_pi-hole.txt"
     ],
     "whitelist_urls": [
 "https://raw.githubusercontent.com/AhaDNS/Aha.Dns.Domains/master/Domains/whitelist.txt",
