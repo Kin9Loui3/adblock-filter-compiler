@@ -106,7 +106,7 @@
 "https://raw.githubusercontent.com/craiu/piholelists/main/ipfs.txt",
 "https://raw.githubusercontent.com/craiu/piholelists/main/kasap.txt",
 "https://raw.githubusercontent.com/craiu/mobiletrackers/master/windowslist.txt",
-"https://v.firebog.net/hosts/static/w3kbl.txt",
+"https://v.firebog.net/hosts/static/w3kbl.txt"
     ],
     "whitelist_urls": [
 "https://raw.githubusercontent.com/AhaDNS/Aha.Dns.Domains/master/Domains/whitelist.txt",
