@@ -1,9 +1,9 @@
 # Title: Kin9Loui3's Compiled Whitelist
 # Description: Python script that generates adblock filters by combining whitelists, host files, and domain lists.
-# Last Modified: 2025-07-18 13:01:51
-# Domain Count: 244
+# Last Modified: 2025-07-18 13:11:24
+# Domain Count: 319
 # Duplicates Removed: 38
-# Domains Compressed: 75
+# Domains Compressed: 0
 #==================================================================
 
 @@||0.client-channel.google.com^
@@ -12,6 +12,7 @@
 @@||1drv.com^
 @@||2.android.pool.ntp.org^
 @@||69.78.33.138^
+@@||a.uguu.se^
 @@||aboo.se^
 @@||ahadns.com^
 @@||ahadns.net^
@@ -30,6 +31,8 @@
 @@||app.adjust.com^
 @@||appleid.apple.com^
 @@||apps.skype.com^
+@@||appsbackup-pa.clients6.google.com^
+@@||appsbackup-pa.googleapis.com^
 @@||appspot-preview.l.google.com^
 @@||apt.sonarr.tv^
 @@||aspnetcdn.com^
@@ -42,12 +45,14 @@
 @@||c.s-microsoft.com^
 @@||cdn.cloudflare.net^
 @@||cdn.embedly.com^
+@@||cdn.kuaidi100.com^
 @@||cdn.optimizely.com^
 @@||cdn.staticfile.org^
 @@||cdn.stream.schibsted.media^
 @@||cdn.vidible.tv^
 @@||cdn2.optimizely.com^
 @@||cdn3.optimizely.com^
+@@||cdnjs.cloudflare.com^
 @@||cert.mgt.xboxlive.com^
 @@||clientconfig.passport.net^
 @@||clients1.google.com^
@@ -57,7 +62,9 @@
 @@||clients5.google.com^
 @@||clients6.google.com^
 @@||cloudflare.com^
+@@||codeload.github.com^
 @@||connectivitycheck.android.com^
+@@||connectivitycheck.gstatic.com^
 @@||continuum.dds.microsoft.com^
 @@||cpms.spop10.ams.plex.bz^
 @@||cpms35.spop10.ams.plex.bz^
@@ -68,6 +75,7 @@
 @@||cws.conviva.com^
 @@||d2c8v52ll5s99u.cloudfront.net^
 @@||d2gatte9o95jao.cloudfront.net^
+@@||dashboard.plex.tv^
 @@||dataplicity.com^
 @@||def-vef.xboxlive.com^
 @@||delivery.vidible.tv^
@@ -76,14 +84,23 @@
 @@||display.ugc.bazaarvoice.com^
 @@||displaycatalog.mp.microsoft.com^
 @@||dl.delivery.mp.microsoft.com^
+@@||dl.dropbox.com^
 @@||dl.dropboxusercontent.com^
+@@||dns.msftncsi.com^
+@@||dnsotls-ds.metric.gstatic.com^
+@@||doh.in.ahadns.net^
+@@||doh.nl.ahadns.net^
+@@||dot.in.ahadns.net^
+@@||dot.nl.ahadns.net^
 @@||download.sonarr.tv^
 @@||download.windowsupdate.com^
 @@||drift.com^
 @@||driftt.com^
 @@||dropbox.com^
+@@||dynupdate.no-ip.com^
 @@||eas3.msg.t-mobile.com^
 @@||eastmoney.com^
+@@||ecn.dev.virtualearth.net^
 @@||edge.api.brightcove.com^
 @@||eds.xboxlive.com^
 @@||eftps.gov^
@@ -97,13 +114,17 @@
 @@||files.shroomery.org^
 @@||flalottery.com^
 @@||flhsmv.gov^
+@@||fonts.googleapis.com^
+@@||fonts.gstatic.com^
 @@||forums.sonarr.tv^
 @@||full.pr0gramm.com^
+@@||g.live.com^
 @@||g.udimg.com^
 @@||geo-prod.do.dsp.mp.microsoft.com^
 @@||geo3.ggpht.com^
 @@||gfwsl.geforce.com^
 @@||giphy.com^
+@@||gitcdn.github.io^
 @@||github.com^
 @@||github.io^
 @@||go.ro^
@@ -111,6 +132,7 @@
 @@||goo.gl^
 @@||googleapis.com^
 @@||googlevideo.com^
+@@||graph.facebook.com^
 @@||gravatar.com^
 @@||gstatic.com^
 @@||help.ui.xboxlive.com^
@@ -125,6 +147,8 @@
 @@||img.vidible.tv^
 @@||imgix.net^
 @@||imgs.xkcd.com^
+@@||in.ahadns.net^
+@@||instantmessaging-pa.googleapis.com^
 @@||intercom.io^
 @@||ip.me^
 @@||ivory.co.il^
@@ -134,20 +158,30 @@
 @@||keystone.mwbsys.com^
 @@||kuaidi100.com^
 @@||lan3rd.line.me^
+@@||lastfm-img2.akamaized.net^
 @@||lgappstv.com^
 @@||licensing.xboxlive.com^
 @@||litter.catbox.moe^
 @@||litterbox.catbox.moe^
 @@||live.com^
 @@||livepassdl.conviva.com^
+@@||login.live.com^
+@@||login.microsoftonline.com^
+@@||m.kuaidi100.com^
+@@||manifest.googlevideo.com^
 @@||mascns.t-mobile.com^
 @@||maxcdn.bootstrapcdn.com^
 @@||meta-db-worker02.pop.ric.plex.bz^
 @@||meta.plex.bz^
+@@||meta.plex.tv^
+@@||metric.gstatic.com^
 @@||microsoftonline.com^
+@@||mqtt-mini.facebook.com^
 @@||msftncsi.com^
 @@||my.plexapp.com^
+@@||nexusrules.officeapps.live.com^
 @@||nine.plugins.plexapp.com^
+@@||nl.ahadns.net^
 @@||no-ip.com^
 @@||node.plexapp.com^
 @@||noexit.tv^
@@ -155,40 +189,56 @@
 @@||notify.xboxlive.com^
 @@||npr-news.streaming.adswizz.com^
 @@||ns.sipgeo.t-mobile.com^
+@@||ns1.dropbox.com^
+@@||ns2.dropbox.com^
 @@||nu.nl^
+@@||o1.email.plex.tv^
+@@||o2.sg0.plex.tv^
 @@||ocsp.apple.com^
 @@||office.com^
 @@||office.net^
 @@||office365.com^
 @@||officeclient.microsoft.com^
 @@||om.cbsi.com^
+@@||onedrive.live.com^
+@@||outlook.live.com^
+@@||outlook.office365.com^
 @@||ow.ly^
 @@||owcpmed.dol.gov^
 @@||photos.google.com^
 @@||pi-dns.com^
 @@||pings.conviva.com^
 @@||placehold.it^
+@@||placeholdit.imgix.net^
+@@||players.brightcove.net^
 @@||plex.direct^
 @@||plex.tv^
 @@||pocketnow.com^
 @@||powerball.com^
 @@||pricelist.skype.com^
+@@||products.office.com^
 @@||proxy.plex.bz^
+@@||proxy.plex.tv^
 @@||proxy02.pop.ord.plex.bz^
 @@||pubsub.plex.bz^
+@@||pubsub.plex.tv^
 @@||rakuten-card.co.jp^
 @@||rakuten-static.com^
 @@||rakuten.co.jp^
 @@||rakuten.jp^
 @@||raw.githubusercontent.com^
 @@||redir.diamond.synacor.com^
+@@||redirector.googlevideo.com^
 @@||res.cloudinary.com^
 @@||robinhood.com^
 @@||s.amazon-adsystem.com^
+@@||s.gateway.messenger.live.com^
 @@||s.marketwatch.com^
 @@||s.youtube.com^
 @@||s.ytimg.com^
+@@||s1.wp.com^
 @@||s2.youtube.com^
+@@||s3.amazonaws.com^
 @@||sa.symcb.com^
 @@||safelinking.net^
 @@||secure.avangate.com^
@@ -202,7 +252,12 @@
 @@||slack-redir.net^
 @@||spclient.wg.spotify.com^
 @@||spg.vzw.com^
+@@||ss.epdg.epc.mnc260.mcc310.pub.3gppnetwork.org^
 @@||ssl.p.jwpcdn.com^
+@@||staging.plex.tv^
+@@||statistics.ahadns.com^
+@@||status.ahadns.com^
+@@||status.plex.tv^
 @@||t.co^
 @@||t0.ssl.ak.dynamic.tiles.virtualearth.net^
 @@||t0.ssl.ak.tiles.virtualearth.net^
@@ -216,6 +271,7 @@
 @@||title.auth.xboxlive.com^
 @@||title.mgt.xboxlive.com^
 @@||traffic.libsyn.com^
+@@||tvdb2.plex.tv^
 @@||tvthemes.plexapp.com^
 @@||twimg.com^
 @@||typekit.com^
@@ -239,9 +295,27 @@
 @@||wo.vzwwo.com^
 @@||wp.com^
 @@||ws.audioscrobbler.com^
+@@||www.aboo.se^
+@@||www.ahadns.com^
 @@||www.amazon.com^
+@@||www.bit.ly^
+@@||www.blocket.se^
+@@||www.dataplicity.com^
 @@||www.ebay.com^
+@@||www.facebook.com^
+@@||www.googleapis.com^
+@@||www.hrblock.com^
+@@||www.ivory.co.il^
+@@||www.kuaidi100.com^
 @@||www.msftconnecttest.com^
+@@||www.msftncsi.com^
+@@||www.no-ip.com^
+@@||www.noexit.tv^
+@@||www.nordichardware.se^
+@@||www.pi-dns.com^
+@@||www.pocketnow.com^
+@@||www.thelasthunt.com^
+@@||www.youtube-nocookie.com^
 @@||xbox.ipv6.microsoft.com^
 @@||xboxexperiencesprod.experimentation.xboxlive.com^
 @@||xflight.xboxlive.com^
@@ -250,3 +324,4 @@
 @@||youtu.be^
 @@||youtube-nocookie.com^
 @@||yt3.ggpht.com^
+@@||zee.cws.conviva.com^
