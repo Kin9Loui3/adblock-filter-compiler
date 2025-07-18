@@ -60,6 +60,14 @@ class DomainTrie:
             node = node.children[part]
         return node.is_end
 
+def extract_domain(rule: str) -> str:
+    """Extracts domain from a filter rule, handles whitelist and blacklist prefixes, normalizes to lowercase."""
+    if rule.startswith('@@'):
+        rule = rule[2:]
+    if rule.startswith('||') and rule.endswith('^'):
+        return rule[2:-1].lower()
+    return rule.lower()
+
 def generate_filter(file_contents, filter_type, deduplicate=False, minify=False):
     """Generates filter content with deduplication and improved domain compression."""
     duplicates_removed = 0
@@ -77,13 +85,13 @@ def generate_filter(file_contents, filter_type, deduplicate=False, minify=False)
             all_rules.append(rule)
 
     # Sort by domain depth (parents first)
-    all_rules.sort(key=lambda r: r[2:-1].count('.'))
+    all_rules.sort(key=lambda r: extract_domain(r).count('.'))
 
     final_rules = []
     trie = DomainTrie()
 
     for rule in all_rules:
-        domain = rule[2:-1]
+        domain = extract_domain(rule)
 
         if minify and trie.is_covered(domain):
             redundant_rules_removed += 1
@@ -96,6 +104,7 @@ def generate_filter(file_contents, filter_type, deduplicate=False, minify=False)
     header = generate_header(len(sorted_rules), duplicates_removed, redundant_rules_removed, filter_type)
 
     if filter_type == 'whitelist':
+        # Add whitelist prefix again if needed
         sorted_rules = ['@@' + rule for rule in sorted_rules]
 
     filter_content = '\n'.join([header, '', *sorted_rules])
