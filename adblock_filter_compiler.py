@@ -4,84 +4,102 @@ from datetime import datetime
 import json
 import os
 
-# Pre-compiled regular expression for performance
+# Pre-compiled regex to validate domains and IPs
 domain_regex = re.compile(
-    r"^(?:(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){3}(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)"
-    r"|(?:[a-z0-9](?:[a-z0-9-]{0,61}[a-z0-9])?\.)+[a-z0-9][a-z0-9-]{0,61}[a-z0-9]$"
+    r"^(?:(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){3}"
+    r"(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)$"
+    r"|^(?=.{1,253}$)(?!-)[a-z0-9-]{1,63}(?<!-)(?:\.(?!-)[a-z0-9-]{1,63}(?<!-))*$"
 )
 
 def is_valid_domain(domain):
-    """Checks if a string is a valid domain."""
-    return bool(domain_regex.fullmatch(domain))
+    return bool(domain_regex.fullmatch(domain.lower()))
 
 def parse_hosts_file(content):
-    """Parses a host file content into AdBlock rules."""
     adblock_rules = set()
     for line in content.split('\n'):
         line = line.strip()
-        if not line or line[0] in ('#', '!'):
+        if not line or line.startswith(('#', '!')):
             continue
         if line.startswith('||') and line.endswith('^'):
-            adblock_rules.add(line)
+            adblock_rules.add(line.lower())
         else:
             parts = line.split()
-            domain = parts[-1]
+            domain = parts[-1].lower()
             if is_valid_domain(domain):
                 adblock_rules.add(f'||{domain}^')
     return adblock_rules
 
-def get_base_domain(domain):
-    return '.'.join(domain.rsplit('.', 2)[-2:])
+# Trie data structure for parent domain compression
+class DomainTrieNode:
+    def __init__(self):
+        self.children = {}
+        self.is_end = False
+
+class DomainTrie:
+    def __init__(self):
+        self.root = DomainTrieNode()
+
+    def add(self, domain):
+        parts = domain.split('.')[::-1]
+        node = self.root
+        for part in parts:
+            node = node.children.setdefault(part, DomainTrieNode())
+        node.is_end = True
+
+    def is_covered(self, domain):
+        parts = domain.split('.')[::-1]
+        node = self.root
+        for part in parts:
+            if node.is_end:
+                return True
+            if part not in node.children:
+                return False
+            node = node.children[part]
+        return node.is_end
 
 def generate_filter(file_contents, filter_type, deduplicate=False, minify=False):
-    """Generates filter content with deduplication and optional domain compression."""
-    adblock_rules_set = set()
-    base_domain_set = set()
+    seen_rules = set()
+    final_rules = []
     duplicates_removed = 0
     redundant_rules_removed = 0
-    
-    all_rules = set()
+    trie = DomainTrie()
+
+    # Aggregate all rules
+    raw_rules = set()
     for content in file_contents:
-        all_rules.update(parse_hosts_file(content))
+        raw_rules.update(parse_hosts_file(content))
 
-    final_rules = set()
-    seen_base_domains = set()
+    # Sort by domain depth (to compress subdomains properly)
+    sorted_raw_rules = sorted(raw_rules, key=lambda r: r[2:-1].count('.'))
 
-    for rule in all_rules:
-        domain = rule[2:-1]  # Remove "||" and "^"
-        base_domain = get_base_domain(domain)
+    for rule in sorted_raw_rules:
+        domain = rule[2:-1]
 
-        if deduplicate and rule in final_rules:
+        if deduplicate and rule in seen_rules:
             duplicates_removed += 1
             continue
 
-        if minify and base_domain in seen_base_domains:
+        if minify and trie.is_covered(domain):
             redundant_rules_removed += 1
             continue
 
-        final_rules.add(rule)
-        seen_base_domains.add(base_domain)
+        seen_rules.add(rule)
+        final_rules.append(rule)
+
+        if minify:
+            trie.add(domain)
 
     sorted_rules = sorted(final_rules)
     header = generate_header(len(sorted_rules), duplicates_removed, redundant_rules_removed, filter_type)
 
     if filter_type == 'whitelist':
-        whitelist_rules = ['@@' + rule for rule in sorted_rules]
-        filter_content = '\n'.join([header, '', *whitelist_rules])
-    else:
-        filter_content = '\n'.join([header, '', *sorted_rules])
+        sorted_rules = ['@@' + rule for rule in sorted_rules]
 
-    return filter_content, duplicates_removed, redundant_rules_removed
+    return '\n'.join([header, '', *sorted_rules]), duplicates_removed, redundant_rules_removed
 
 def generate_header(domain_count, duplicates_removed, redundant_rules_removed, filter_type):
-    """Generates header with stats."""
     date_time = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
-    if filter_type == 'blacklist':
-        title = "Kin9Loui3's Compiled Blacklist"
-    elif filter_type == 'whitelist':
-        title = "Kin9Loui3's Compiled Whitelist"
-    else:
-        title = "Filter"
+    title = f"Kin9Loui3's Compiled {filter_type.capitalize()}"
     return f"""# Title: {title}
 # Description: Python script that generates adblock filters by combining {filter_type}s, host files, and domain lists.
 # Last Modified: {date_time}
