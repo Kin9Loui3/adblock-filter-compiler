@@ -1,8 +1,8 @@
 # Title: Kin9Loui3's Compiled Whitelist
 # Description: Python script that generates adblock filters by combining whitelists, host files, and domain lists.
-# Last Modified: 2025-07-18 12:34:00
+# Last Modified: 2025-07-18 12:46:38
 # Domain Count: 244
-# Duplicates Removed: 0
+# Duplicates Removed: 38
 # Domains Compressed: 75
 #==================================================================
 
