@@ -10,9 +10,21 @@ domain_regex = re.compile(
     r"|(?:[a-z0-9](?:[a-z0-9-]{0,61}[a-z0-9])?\.)+[a-z0-9][a-z0-9-]{0,61}[a-z0-9]$"
 )
 
+# A small list of common public suffixes for better base domain extraction
+public_suffixes = {
+    "co.uk", "gov.uk", "ac.uk",
+    "com.au", "net.au", "org.au",
+    "co.nz", "gov.nz",
+    # Add more if needed
+}
+
 def is_valid_domain(domain):
     """Checks if a string is a valid domain."""
     return bool(domain_regex.fullmatch(domain))
+
+def normalize_domain(domain):
+    """Normalize domain by lowercasing and stripping trailing dot."""
+    return domain.strip().lower().rstrip('.')
 
 def parse_hosts_file(content):
     """Parses a host file content into AdBlock rules."""
@@ -25,18 +37,29 @@ def parse_hosts_file(content):
             adblock_rules.add(line)
         else:
             parts = line.split()
-            domain = parts[-1]
+            domain = normalize_domain(parts[-1])
             if is_valid_domain(domain):
                 adblock_rules.add(f'||{domain}^')
     return adblock_rules
 
 def get_base_domain(domain):
-    return '.'.join(domain.rsplit('.', 2)[-2:])
+    """Return the base domain considering public suffixes."""
+    domain = normalize_domain(domain)
+    parts = domain.split('.')
+    if len(parts) < 2:
+        return domain  # e.g. localhost or invalid
+
+    # Check last two parts against public suffix list
+    last_two = '.'.join(parts[-2:])
+    last_three = '.'.join(parts[-3:]) if len(parts) >= 3 else None
+
+    if last_two in public_suffixes and len(parts) > 2:
+        return last_three
+    else:
+        return last_two
 
 def generate_filter(file_contents, filter_type, deduplicate=False, minify=False):
     """Generates filter content with deduplication and optional domain compression."""
-    adblock_rules_set = set()
-    base_domain_set = set()
     duplicates_removed = 0
     redundant_rules_removed = 0
     
@@ -47,13 +70,14 @@ def generate_filter(file_contents, filter_type, deduplicate=False, minify=False)
     final_rules = set()
     seen_base_domains = set()
 
-    for rule in all_rules:
-        domain = rule[2:-1]  # Remove "||" and "^"
-        base_domain = get_base_domain(domain)
-
+    # Remove exact duplicates first by sorting to ensure stable order
+    for rule in sorted(all_rules):
         if deduplicate and rule in final_rules:
             duplicates_removed += 1
             continue
+
+        domain = rule[2:-1]  # Remove "||" and "^"
+        base_domain = get_base_domain(domain)
 
         if minify and base_domain in seen_base_domains:
             redundant_rules_removed += 1
