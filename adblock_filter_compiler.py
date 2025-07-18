@@ -44,8 +44,6 @@ def generate_filter(file_contents, filter_type, deduplicate=False, minify=False)
         all_rules.update(parse_hosts_file(content))
 
     final_rules = set()
-    removed_duplicates = []
-    removed_compressed = []
 
     # Sort rules so parents come before subdomains (helps compression)
     for rule in sorted(all_rules):
@@ -54,14 +52,12 @@ def generate_filter(file_contents, filter_type, deduplicate=False, minify=False)
         # Deduplicate check
         if deduplicate and rule in final_rules:
             duplicates_removed += 1
-            removed_duplicates.append(rule)
             continue
 
         # Compression: skip if any existing domain covers this domain
         if minify:
             if any(is_subdomain(domain, existing_rule[2:-1]) for existing_rule in final_rules):
                 redundant_rules_removed += 1
-                removed_compressed.append(rule)
                 continue
 
         final_rules.add(rule)
@@ -74,16 +70,6 @@ def generate_filter(file_contents, filter_type, deduplicate=False, minify=False)
         filter_content = '\n'.join([header, '', *whitelist_rules])
     else:
         filter_content = '\n'.join([header, '', *sorted_rules])
-
-    # Print removed entries for transparency
-    if removed_duplicates:
-        print(f"\nRemoved {len(removed_duplicates)} duplicate rules:")
-        for dup in sorted(removed_duplicates):
-            print(f"  {dup}")
-    if removed_compressed:
-        print(f"\nRemoved {len(removed_compressed)} compressed (redundant parent domain) rules:")
-        for comp in sorted(removed_compressed):
-            print(f"  {comp}")
 
     return filter_content, duplicates_removed, redundant_rules_removed
 
