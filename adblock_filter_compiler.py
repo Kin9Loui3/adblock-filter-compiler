@@ -4,22 +4,20 @@ from datetime import datetime
 import json
 import os
 
-# Pre-compiled regular expression for performance
+# Fast domain regex
 domain_regex = re.compile(
     r"^(?:(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){3}(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)"
     r"|(?:[a-z0-9](?:[a-z0-9-]{0,61}[a-z0-9])?\.)+[a-z0-9][a-z0-9-]{0,61}[a-z0-9]$"
 )
 
 def is_valid_domain(domain):
-    """Checks if a string is a valid domain."""
     return bool(domain_regex.fullmatch(domain))
 
 def parse_hosts_file(content):
-    """Parses a host file content into AdBlock rules."""
     adblock_rules = set()
     for line in content.split('\n'):
         line = line.strip()
-        if not line or line[0] in ('#', '!'):
+        if not line or line.startswith(('#', '!')):
             continue
         if line.startswith('||') and line.endswith('^'):
             adblock_rules.add(line)
@@ -30,63 +28,57 @@ def parse_hosts_file(content):
                 adblock_rules.add(f'||{domain}^')
     return adblock_rules
 
-def is_domain_covered(domain, covered_domains):
-    """Check if domain or any parent domain is in covered_domains set."""
-    parts = domain.split('.')
-    for i in range(len(parts)):
-        candidate = '.'.join(parts[i:])
-        if candidate in covered_domains:
-            return True
-    return False
+def is_subdomain(sub, parent):
+    """Check if `sub` is a subdomain of `parent`."""
+    return sub == parent or sub.endswith('.' + parent)
 
 def generate_filter(file_contents, filter_type, deduplicate=False, minify=False):
-    """Generates filter content with deduplication and improved domain compression."""
     duplicates_removed = 0
     redundant_rules_removed = 0
-    
-    all_rules = set()
+
+    # All rules from input files
+    all_rules = []
+    seen_rules = set()
+
     for content in file_contents:
-        all_rules.update(parse_hosts_file(content))
+        for rule in parse_hosts_file(content):
+            if rule in seen_rules:
+                duplicates_removed += 1
+            else:
+                all_rules.append(rule)
+                seen_rules.add(rule)
 
-    final_rules = set()
-    covered_domains = set()  # Track domains that cover subdomains
+    # Sort domains so parent domains appear first
+    all_rules.sort(key=lambda r: r[2:-1].count('.'))
 
-    for rule in sorted(all_rules):
-        domain = rule[2:-1]  # Strip '||' and '^'
+    final_rules = []
+    base_domains = set()
 
-        # Deduplicate check
-        if deduplicate and rule in final_rules:
-            duplicates_removed += 1
-            continue
+    for rule in all_rules:
+        domain = rule[2:-1]
 
-        # Compression using parent domain check
-        if minify and is_domain_covered(domain, covered_domains):
+        if minify and any(is_subdomain(domain, bd) for bd in base_domains):
             redundant_rules_removed += 1
             continue
 
-        final_rules.add(rule)
-        covered_domains.add(domain)  # Mark this domain as covering subdomains
+        base_domains.add(domain)
+        final_rules.append(rule)
 
+    # Final output
     sorted_rules = sorted(final_rules)
     header = generate_header(len(sorted_rules), duplicates_removed, redundant_rules_removed, filter_type)
 
     if filter_type == 'whitelist':
-        whitelist_rules = ['@@' + rule for rule in sorted_rules]
-        filter_content = '\n'.join([header, '', *whitelist_rules])
-    else:
-        filter_content = '\n'.join([header, '', *sorted_rules])
+        sorted_rules = ['@@' + rule for rule in sorted_rules]
 
-    return filter_content, duplicates_removed, redundant_rules_removed
+    return '\n'.join([header, '', *sorted_rules]), duplicates_removed, redundant_rules_removed
 
 def generate_header(domain_count, duplicates_removed, redundant_rules_removed, filter_type):
-    """Generates header with stats."""
     date_time = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
-    if filter_type == 'blacklist':
-        title = "Kin9Loui3's Compiled Blacklist"
-    elif filter_type == 'whitelist':
-        title = "Kin9Loui3's Compiled Whitelist"
-    else:
-        title = "Filter"
+    title = {
+        "blacklist": "Kin9Loui3's Compiled Blacklist",
+        "whitelist": "Kin9Loui3's Compiled Whitelist"
+    }.get(filter_type, "Filter")
     return f"""# Title: {title}
 # Description: Python script that generates adblock filters by combining {filter_type}s, host files, and domain lists.
 # Last Modified: {date_time}
@@ -97,32 +89,31 @@ def generate_header(domain_count, duplicates_removed, redundant_rules_removed, f
 
 def process_config(config_file):
     with open(config_file, 'r') as f:
-        config_data = json.load(f)
+        config = json.load(f)
 
-    deduplicate = config_data.get('deduplicate', True)
-    minify = config_data.get('minify', True)
+    deduplicate = config.get('deduplicate', True)
+    minify = config.get('minify', True)
 
-    blacklist_urls = config_data.get('blacklist_urls', [])
-    whitelist_urls = config_data.get('whitelist_urls', [])
-    blacklist_filename = config_data.get('blacklist_filename', 'blacklist.txt')
-    whitelist_filename = config_data.get('whitelist_filename', 'whitelist.txt')
+    blacklist_urls = config.get('blacklist_urls', [])
+    whitelist_urls = config.get('whitelist_urls', [])
+    blacklist_filename = config.get('blacklist_filename', 'blacklist.txt')
+    whitelist_filename = config.get('whitelist_filename', 'whitelist.txt')
 
     blacklist_contents = [requests.get(url).text for url in blacklist_urls]
     whitelist_contents = [requests.get(url).text for url in whitelist_urls]
 
-    blacklist_content, _, _ = generate_filter(blacklist_contents, 'blacklist', deduplicate, minify)
-    whitelist_content, _, _ = generate_filter(whitelist_contents, 'whitelist', deduplicate, minify)
+    blacklist_output, _, _ = generate_filter(blacklist_contents, 'blacklist', deduplicate, minify)
+    whitelist_output, _, _ = generate_filter(whitelist_contents, 'whitelist', deduplicate, minify)
 
     with open(blacklist_filename, 'w') as f:
-        f.write(blacklist_content)
-
+        f.write(blacklist_output)
     with open(whitelist_filename, 'w') as f:
-        f.write(whitelist_content)
+        f.write(whitelist_output)
 
 def main():
-    config_files = [file for file in os.listdir() if file.startswith('config') and file.endswith('.json')]
+    config_files = [f for f in os.listdir() if f.startswith('config') and f.endswith('.json')]
     for config_file in config_files:
         process_config(config_file)
 
-if __name__ == "__main__":
+if __name__ == '__main__':
     main()
