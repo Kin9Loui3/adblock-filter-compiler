@@ -1,19 +1,14 @@
 {
   "deduplicate": true,
   "minify": true,
-  ...
-}
-{
   "ads": "EasyList (Optimized)",
   "privacy": "EasyPrivacy (Optimized)",
   "annoyances": "Fanboy Annoyances (Optimized)",
   "social": "AdGuard Social Media filter (Optimized)",
   "mobile": "AdGuard Mobile Ads filter (Optimized)",
   "enable_cosmetic_filters": false,
-  "enable_scriptlets": false
-}
-{
-    "blacklist_urls":  [
+  "enable_scriptlets": false,
+  "blacklist_urls": [
 "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/pro.mini.txt",
 "https://raw.githubusercontent.com/cbuijs/oisd/master/big/domains.top-n.adblock",
 "https://hblock.molinero.dev/hosts_adblock.txt",
