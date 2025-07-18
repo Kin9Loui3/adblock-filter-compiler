@@ -30,9 +30,14 @@ def parse_hosts_file(content):
                 adblock_rules.add(f'||{domain}^')
     return adblock_rules
 
-def is_subdomain(sub, parent):
-    """Return True if 'sub' is equal to or subdomain of 'parent'."""
-    return sub == parent or sub.endswith('.' + parent)
+def is_domain_covered(domain, covered_domains):
+    """Check if domain or any parent domain is in covered_domains set."""
+    parts = domain.split('.')
+    for i in range(len(parts)):
+        candidate = '.'.join(parts[i:])
+        if candidate in covered_domains:
+            return True
+    return False
 
 def generate_filter(file_contents, filter_type, deduplicate=False, minify=False):
     """Generates filter content with deduplication and improved domain compression."""
@@ -44,8 +49,8 @@ def generate_filter(file_contents, filter_type, deduplicate=False, minify=False)
         all_rules.update(parse_hosts_file(content))
 
     final_rules = set()
+    covered_domains = set()  # Track domains that cover subdomains
 
-    # Sort rules so parents come before subdomains (helps compression)
     for rule in sorted(all_rules):
         domain = rule[2:-1]  # Strip '||' and '^'
 
@@ -54,13 +59,13 @@ def generate_filter(file_contents, filter_type, deduplicate=False, minify=False)
             duplicates_removed += 1
             continue
 
-        # Compression: skip if any existing domain covers this domain
-        if minify:
-            if any(is_subdomain(domain, existing_rule[2:-1]) for existing_rule in final_rules):
-                redundant_rules_removed += 1
-                continue
+        # Compression using parent domain check
+        if minify and is_domain_covered(domain, covered_domains):
+            redundant_rules_removed += 1
+            continue
 
         final_rules.add(rule)
+        covered_domains.add(domain)  # Mark this domain as covering subdomains
 
     sorted_rules = sorted(final_rules)
     header = generate_header(len(sorted_rules), duplicates_removed, redundant_rules_removed, filter_type)
