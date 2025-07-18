@@ -3,6 +3,7 @@ import requests
 from datetime import datetime
 import json
 import os
+from collections import Counter
 
 # Pre-compiled regular expression for performance
 domain_regex = re.compile(
@@ -11,47 +12,47 @@ domain_regex = re.compile(
 )
 
 def is_valid_domain(domain):
-    """Checks if a string is a valid domain."""
     return bool(domain_regex.fullmatch(domain))
 
 def parse_hosts_file(content):
-    """Parses a host file content into AdBlock rules."""
-    adblock_rules = set()
+    adblock_rules = []
     for line in content.split('\n'):
         line = line.strip()
         if not line or line[0] in ('#', '!'):
             continue
         if line.startswith('||') and line.endswith('^'):
-            adblock_rules.add(line)
+            adblock_rules.append(line)
         else:
             parts = line.split()
             domain = parts[-1]
             if is_valid_domain(domain):
-                adblock_rules.add(f'||{domain}^')
+                adblock_rules.append(f'||{domain}^')
     return adblock_rules
 
 def get_base_domain(domain):
     return '.'.join(domain.rsplit('.', 2)[-2:])
 
 def generate_filter(file_contents, filter_type, deduplicate=False, minify=False):
-    """Generates filter content with deduplication and optional domain compression."""
     duplicates_removed = 0
     redundant_rules_removed = 0
-    
-    all_rules = set()
-    for content in file_contents:
-        all_rules.update(parse_hosts_file(content))
 
-    final_rules = set()
+    raw_rules = []
+    for content in file_contents:
+        raw_rules.extend(parse_hosts_file(content))
+
+    rule_counter = Counter(raw_rules)
+    seen_rules = set()
     seen_base_domains = set()
+
     removed_duplicates = []
     removed_compressed = []
+    final_rules = []
 
-    for rule in all_rules:
-        domain = rule[2:-1]  # Remove "||" and "^"
+    for rule in raw_rules:
+        domain = rule[2:-1]
         base_domain = get_base_domain(domain)
 
-        if deduplicate and rule in final_rules:
+        if deduplicate and rule in seen_rules:
             duplicates_removed += 1
             removed_duplicates.append(rule)
             continue
@@ -61,32 +62,20 @@ def generate_filter(file_contents, filter_type, deduplicate=False, minify=False)
             removed_compressed.append(rule)
             continue
 
-        final_rules.add(rule)
+        seen_rules.add(rule)
         seen_base_domains.add(base_domain)
+        final_rules.append(rule)
 
-    sorted_rules = sorted(final_rules)
+    sorted_rules = sorted(set(final_rules))
     header = generate_header(len(sorted_rules), duplicates_removed, redundant_rules_removed, filter_type)
 
     if filter_type == 'whitelist':
-        whitelist_rules = ['@@' + rule for rule in sorted_rules]
-        filter_content = '\n'.join([header, '', *whitelist_rules])
-    else:
-        filter_content = '\n'.join([header, '', *sorted_rules])
+        sorted_rules = ['@@' + rule for rule in sorted_rules]
 
-    # Print removed entries for transparency
-    if removed_duplicates:
-        print(f"\nRemoved {len(removed_duplicates)} duplicate rules:")
-        for dup in sorted(removed_duplicates):
-            print(f"  {dup}")
-    if removed_compressed:
-        print(f"\nRemoved {len(removed_compressed)} compressed (redundant base domain) rules:")
-        for comp in sorted(removed_compressed):
-            print(f"  {comp}")
-
+    filter_content = '\n'.join([header, '', *sorted_rules])
     return filter_content, duplicates_removed, redundant_rules_removed
 
 def generate_header(domain_count, duplicates_removed, redundant_rules_removed, filter_type):
-    """Generates header with stats."""
     date_time = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
     if filter_type == 'blacklist':
         title = "Kin9Loui3's Compiled Blacklist"
