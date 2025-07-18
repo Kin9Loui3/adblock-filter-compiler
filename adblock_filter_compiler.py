@@ -10,21 +10,9 @@ domain_regex = re.compile(
     r"|(?:[a-z0-9](?:[a-z0-9-]{0,61}[a-z0-9])?\.)+[a-z0-9][a-z0-9-]{0,61}[a-z0-9]$"
 )
 
-# A small list of common public suffixes for better base domain extraction
-public_suffixes = {
-    "co.uk", "gov.uk", "ac.uk",
-    "com.au", "net.au", "org.au",
-    "co.nz", "gov.nz",
-    # Add more if needed
-}
-
 def is_valid_domain(domain):
     """Checks if a string is a valid domain."""
     return bool(domain_regex.fullmatch(domain))
-
-def normalize_domain(domain):
-    """Normalize domain by lowercasing and stripping trailing dot."""
-    return domain.strip().lower().rstrip('.')
 
 def parse_hosts_file(content):
     """Parses a host file content into AdBlock rules."""
@@ -37,29 +25,17 @@ def parse_hosts_file(content):
             adblock_rules.add(line)
         else:
             parts = line.split()
-            domain = normalize_domain(parts[-1])
+            domain = parts[-1]
             if is_valid_domain(domain):
                 adblock_rules.add(f'||{domain}^')
     return adblock_rules
 
-def get_base_domain(domain):
-    """Return the base domain considering public suffixes."""
-    domain = normalize_domain(domain)
-    parts = domain.split('.')
-    if len(parts) < 2:
-        return domain  # e.g. localhost or invalid
-
-    # Check last two parts against public suffix list
-    last_two = '.'.join(parts[-2:])
-    last_three = '.'.join(parts[-3:]) if len(parts) >= 3 else None
-
-    if last_two in public_suffixes and len(parts) > 2:
-        return last_three
-    else:
-        return last_two
+def is_subdomain(sub, parent):
+    """Return True if 'sub' is equal to or subdomain of 'parent'."""
+    return sub == parent or sub.endswith('.' + parent)
 
 def generate_filter(file_contents, filter_type, deduplicate=False, minify=False):
-    """Generates filter content with deduplication and optional domain compression."""
+    """Generates filter content with deduplication and improved domain compression."""
     duplicates_removed = 0
     redundant_rules_removed = 0
     
@@ -68,23 +44,27 @@ def generate_filter(file_contents, filter_type, deduplicate=False, minify=False)
         all_rules.update(parse_hosts_file(content))
 
     final_rules = set()
-    seen_base_domains = set()
+    removed_duplicates = []
+    removed_compressed = []
 
-    # Remove exact duplicates first by sorting to ensure stable order
+    # Sort rules so parents come before subdomains (helps compression)
     for rule in sorted(all_rules):
+        domain = rule[2:-1]  # Strip '||' and '^'
+
+        # Deduplicate check
         if deduplicate and rule in final_rules:
             duplicates_removed += 1
+            removed_duplicates.append(rule)
             continue
 
-        domain = rule[2:-1]  # Remove "||" and "^"
-        base_domain = get_base_domain(domain)
-
-        if minify and base_domain in seen_base_domains:
-            redundant_rules_removed += 1
-            continue
+        # Compression: skip if any existing domain covers this domain
+        if minify:
+            if any(is_subdomain(domain, existing_rule[2:-1]) for existing_rule in final_rules):
+                redundant_rules_removed += 1
+                removed_compressed.append(rule)
+                continue
 
         final_rules.add(rule)
-        seen_base_domains.add(base_domain)
 
     sorted_rules = sorted(final_rules)
     header = generate_header(len(sorted_rules), duplicates_removed, redundant_rules_removed, filter_type)
@@ -94,6 +74,16 @@ def generate_filter(file_contents, filter_type, deduplicate=False, minify=False)
         filter_content = '\n'.join([header, '', *whitelist_rules])
     else:
         filter_content = '\n'.join([header, '', *sorted_rules])
+
+    # Print removed entries for transparency
+    if removed_duplicates:
+        print(f"\nRemoved {len(removed_duplicates)} duplicate rules:")
+        for dup in sorted(removed_duplicates):
+            print(f"  {dup}")
+    if removed_compressed:
+        print(f"\nRemoved {len(removed_compressed)} compressed (redundant parent domain) rules:")
+        for comp in sorted(removed_compressed):
+            print(f"  {comp}")
 
     return filter_content, duplicates_removed, redundant_rules_removed
 
