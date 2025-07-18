@@ -1,4 +1,13 @@
 {
+  "ads": "EasyList (Optimized)",
+  "privacy": "EasyPrivacy (Optimized)",
+  "annoyances": "Fanboy Annoyances (Optimized)",
+  "social": "AdGuard Social Media filter (Optimized)",
+  "mobile": "AdGuard Mobile Ads filter (Optimized)",
+  "enable_cosmetic_filters": false,
+  "enable_scriptlets": false
+}
+{
     "blacklist_urls":  [
 "https://raw.githubusercontent.com/hectorm/hmirror/master/data/adaway.org/list.txt",
 "https://raw.githubusercontent.com/hectorm/hmirror/master/data/adblock-nocoin-list/list.txt",
