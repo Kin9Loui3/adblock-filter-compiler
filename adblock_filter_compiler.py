@@ -7,17 +7,22 @@ import os
 from collections import Counter
 import logging
 import argparse
-import tldextract
 
 logging.basicConfig(level=logging.INFO, format='%(levelname)s: %(message)s')
 
+# Simple domain validator
+domain_regex = re.compile(
+    r"^(?=.{1,253}$)(?!\-)(?:[a-zA-Z0-9\-]{1,63}\.)+[a-zA-Z]{2,63}$"
+)
+
 def is_valid_domain(domain):
-    ext = tldextract.extract(domain)
-    return bool(ext.domain and ext.suffix)
+    return bool(domain_regex.fullmatch(domain))
 
 def get_base_domain(domain):
-    ext = tldextract.extract(domain)
-    return f"{ext.domain}.{ext.suffix}"
+    parts = domain.split('.')
+    if len(parts) >= 2:
+        return '.'.join(parts[-2:])
+    return domain
 
 def fetch_url(url, retries=3, timeout=10):
     for attempt in range(1, retries + 1):
@@ -45,10 +50,9 @@ def parse_hosts_file(content):
         if not parts:
             continue
 
-        # take last token as domain candidate
         domain = parts[-1]
         if domain.startswith('||') and domain.endswith('^'):
-            domain = domain[2:-1]  # strip wrapper
+            domain = domain[2:-1]
         if is_valid_domain(domain):
             rules.add(f'||{domain}^')
     return rules
