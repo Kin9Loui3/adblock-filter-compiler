@@ -20,10 +20,17 @@ def parse_hosts_file(content):
         line = line.strip()
         if not line or line[0] in ('#', '!'):
             continue
+
+        # Insert space after '0.0.0.0' if missing
+        if line.startswith('0.0.0.0') and not line.startswith('0.0.0.0 '):
+            line = line.replace('0.0.0.0', '0.0.0.0 ', 1)
+
         if line.startswith('||') and line.endswith('^'):
             adblock_rules.append(line)
         else:
             parts = line.split()
+            if not parts:
+                continue
             domain = parts[-1]
             if is_valid_domain(domain):
                 adblock_rules.append(f'||{domain}^')
