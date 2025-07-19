@@ -1,17 +1,15 @@
 # Title: Kin9Loui3's Compiled Whitelist
-# Description: Python script that generates adblock filters by combining whitelists, host files, and domain lists.
-# Last Modified: 2025-07-19 08:34:10
-# Domain Count: 171
-# Duplicates Removed: 31
-# Domains Compressed: 159
+# Description: Compiled whitelist filter
+# Last Modified: 2025-07-19 08:47:06
+# Domain Count: 168
+# Duplicates Removed: 148
+# Domains Compressed: 148
 #==================================================================
 
 @@||0.client-channel.google.com^
-@@||141.207.193.233^
-@@||162.115.18.212^
 @@||1drv.com^
 @@||2.android.pool.ntp.org^
-@@||69.78.33.138^
+@@||a.uguu.se^
 @@||aboo.se^
 @@||ahadns.com^
 @@||ahadns.net^
@@ -41,27 +39,30 @@
 @@||c.s-microsoft.com^
 @@||cdn.cloudflare.net^
 @@||cdn.embedly.com^
+@@||cdn.kuaidi100.com^
 @@||cdn.optimizely.com^
 @@||cdn.staticfile.org^
 @@||cdn.stream.schibsted.media^
 @@||cdn.vidible.tv^
 @@||cdnjs.cloudflare.com^
 @@||clientconfig.passport.net^
+@@||codeload.github.com^
 @@||connectivitycheck.android.com^
+@@||connectivitycheck.gstatic.com^
+@@||continuum.dds.microsoft.com^
 @@||cpms.spop10.ams.plex.bz^
 @@||crl.t-mobile.com^
 @@||crl.tivuon.tv^
 @@||ctldl.windowsupdate.com^
+@@||cws.conviva.com^
 @@||d2c8v52ll5s99u.cloudfront.net^
 @@||dashboard.plex.tv^
 @@||dataplicity.com^
 @@||dev.virtualearth.net^
 @@||display.ugc.bazaarvoice.com^
-@@||displaycatalog.mp.microsoft.com^
 @@||dl.dropbox.com^
 @@||dl.dropboxusercontent.com^
 @@||dns.msftncsi.com^
-@@||dnsotls-ds.metric.gstatic.com^
 @@||drift.com^
 @@||driftt.com^
 @@||dynupdate.no-ip.com^
@@ -70,8 +71,10 @@
 @@||eftps.gov^
 @@||epdg.epc.att.net^
 @@||epdg.epc.mnc240.mcc310.pub.3gppnetwork.org^
+@@||facebook.com^
 @@||fast.com^
 @@||fast.fonts.net^
+@@||files.catbox.moe^
 @@||files.shroomery.org^
 @@||flalottery.com^
 @@||flhsmv.gov^
@@ -81,13 +84,13 @@
 @@||geo3.ggpht.com^
 @@||gfwsl.geforce.com^
 @@||giphy.com^
-@@||github.com^
-@@||github.io^
+@@||gitcdn.github.io^
 @@||go.ro^
 @@||godaddy.com^
 @@||goo.gl^
-@@||graph.facebook.com^
+@@||googlevideo.com^
 @@||gravatar.com^
+@@||hrblock.com^
 @@||hrpassport.com^
 @@||i.ibb.co^
 @@||i.imgur.com^
@@ -102,12 +105,9 @@
 @@||jquery.com^
 @@||jsdelivr.net^
 @@||keystone.mwbsys.com^
-@@||kuaidi100.com^
 @@||lan3rd.line.me^
 @@||lgappstv.com^
-@@||litter.catbox.moe^
 @@||login.microsoftonline.com^
-@@||manifest.googlevideo.com^
 @@||maxcdn.bootstrapcdn.com^
 @@||my.plexapp.com^
 @@||noexit.tv^
@@ -125,8 +125,8 @@
 @@||plex.direct^
 @@||pocketnow.com^
 @@||powerball.com^
+@@||rakuten-card.co.jp^
 @@||rakuten-static.com^
-@@||rakuten.co.jp^
 @@||rakuten.jp^
 @@||raw.githubusercontent.com^
 @@||redir.diamond.synacor.com^
@@ -159,7 +159,6 @@
 @@||typekit.com^
 @@||typekit.net^
 @@||ual.com^
-@@||uguu.se^
 @@||united.com^
 @@||upload.messenger.com^
 @@||upload.wikimedia.org^
@@ -172,8 +171,6 @@
 @@||ws.audioscrobbler.com^
 @@||www.amazon.com^
 @@||www.ebay.com^
-@@||www.hrblock.com^
 @@||www.msftconnecttest.com^
 @@||www.youtube-nocookie.com^
 @@||youtu.be^
-@@||zee.cws.conviva.com^
