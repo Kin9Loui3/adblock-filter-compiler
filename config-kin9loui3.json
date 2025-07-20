@@ -9,7 +9,7 @@
   "enable_cosmetic_filters": false,
   "enable_scriptlets": false,
   "blacklist_urls": [
-"https://github.com/Kin9Loui3/adblock-filter-compiler/raw/refs/heads/main/blacklist-main.txt",
+"https://raw.githubusercontent.com/Kin9Loui3/adblock-filter-compiler/refs/heads/main/blacklist-main.txt",
 "https://raw.githubusercontent.com/Kin9Loui3/twitch_ad_block_list/main/Personal_Blacklist",
 "https://raw.githubusercontent.com/SemHiel/adguardnoporn/main/list.txt",
 "https://raw.githubusercontent.com/jarelllama/Scam-Blocklist/refs/heads/main/lists/adblock/nsfw.txt",
