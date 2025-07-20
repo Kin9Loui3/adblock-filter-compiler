@@ -9,7 +9,7 @@
   "enable_cosmetic_filters": false,
   "enable_scriptlets": false,
   "blacklist_urls": [
-"https://raw.githubusercontent.com/Kin9Loui3/adblock-filter-compiler/refs/heads/main/blacklist-main.txt",
+"https://raw.githubusercontent.com/Kin9Loui3/adblock-filter-compiler/main/blacklist-main.txt",
 "https://raw.githubusercontent.com/Kin9Loui3/twitch_ad_block_list/main/Personal_Blacklist",
 "https://raw.githubusercontent.com/SemHiel/adguardnoporn/main/list.txt",
 "https://raw.githubusercontent.com/jarelllama/Scam-Blocklist/refs/heads/main/lists/adblock/nsfw.txt",
@@ -43,10 +43,5 @@
 "https://codeberg.org/EXCONN/gaming-privacy-list/raw/branch/main/EXCONN-main.txt",
 "https://raw.githubusercontent.com/yokoffing/filterlists/refs/heads/main/click2load.txt"
     ],
-    "whitelist_urls": [
-"https://raw.githubusercontent.com/Kin9Loui3/adblock-filter-compiler/main/whitelist-main.txt",
-"https://raw.githubusercontent.com/Kin9Loui3/twitch_ad_block_list/main/Personal_Whitelist"
-    ],
     "blacklist_filename": "blacklist-kin9loui3-personal.txt",
-    "whitelist_filename": "whitelist-kin9loui3-personal.txt"
 }
