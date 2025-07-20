@@ -47,6 +47,6 @@
 "https://raw.githubusercontent.com/Kin9Loui3/adblock-filter-compiler/main/whitelist-main.txt",
 "https://raw.githubusercontent.com/Kin9Loui3/twitch_ad_block_list/main/Personal_Whitelist"
     ],
-    "blacklist_filename": "blacklist-personal-nsfw-kin9loui3.txt",
-    "whitelist_filename": "whitelist-personal-kin9loui3.txt"
+    "blacklist_filename": "blacklist-kin9loui3.txt",
+    "whitelist_filename": "whitelist-kin9loui3.txt"
 }
