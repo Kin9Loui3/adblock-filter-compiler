@@ -1,6 +1,6 @@
 {
   "deduplicate": true,
-  "minify": true,
+  "minify": false,
   "ads": "EasyList (Optimized)",
   "privacy": "EasyPrivacy (Optimized)",
   "annoyances": "Fanboy Annoyances (Optimized)",
