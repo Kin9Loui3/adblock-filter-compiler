@@ -164,7 +164,7 @@
 "https://raw.githubusercontent.com/ShadowWhisperer/IPs/master/BruteForce/Medium",
 "https://raw.githubusercontent.com/ShadowWhisperer/IPs/master/BruteForce/High",
 "https://raw.githubusercontent.com/dead-hosts/cookies_filters_git_MajkiIT/master/clean.list",
-"https://raw.githubusercontent.com/dead-hosts/.pl-host-file_git_xxcriticxx/master/clean.list",
+"https://raw.githubusercontent.com/dead-hosts/add.Dead_git_FadeMind/master/clean.list",
 "https://raw.githubusercontent.com/thedoggybrad/easylistadware/main/adwarefilters.txt",
 "https://raw.githubusercontent.com/Dawsey21/Lists/master/main-blacklist.txt",
 "https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/MobileFilter/sections/adservers.txt",
@@ -172,7 +172,6 @@
 "https://raw.githubusercontent.com/r-a-y/mobile-hosts/master/AdguardMobileSpyware.txt",
 "https://raw.githubusercontent.com/danielcuthbert/trackers/master/mobilegames.txt",
 "https://raw.githubusercontent.com/JLospinoso/doh/master/block/adaway.org.txt",
-"https://raw.githubusercontent.com/bongochong/CombinedPrivacyBlockLists/master/MiniLists/NoFormatting/mini-BlacklistedDomains.txt",
 "https://raw.githubusercontent.com/bongochong/CombinedPrivacyBlockLists/master/MiniLists/NoFormatting/cpbl-mini-ctld.txt",
 "https://raw.githubusercontent.com/bongochong/CombinedPrivacyBlockLists/master/MiniLists/NoFormatting/AdditionalSuppleMini.txt",
 "https://adguardteam.github.io/HostlistsRegistry/assets/filter_24.txt",
@@ -196,8 +195,6 @@
 "https://s3.amazonaws.com/lists.disconnect.me/simple_ad.txt",
 "https://raw.githubusercontent.com/spmedia/Crypto-Scam-and-Crypto-Phishing-Threat-Intel-Feed/main/detected_urls.txt",
 "https://github.com/greyhat-academy/lists.d/blob/main/scrapers.ipv4.block.list.tsv",
-"https://git.flossboxin.org.in/vdbhb59/hosts/raw/branch/main/ip_spamlist.txt",
-"https://git.flossboxin.org.in/vdbhb59/hosts/raw/branch/main/number%20spamlists.txt",
 "https://raw.githubusercontent.com/TimTheBig/the_big_list_for_pi-hole/refs/heads/main/big_block_list_pi-hole.txt"
     ],
     "whitelist_urls": [
