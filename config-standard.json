@@ -9,11 +9,16 @@
   "enable_cosmetic_filters": false,
   "enable_scriptlets": false,
   "blacklist_urls": [
-"https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/pro.mini.txt",
-"https://raw.githubusercontent.com/cbuijs/oisd/master/big/domains.top-n.adblock",
-"https://hblock.molinero.dev/hosts_adblock.txt",
-"https://raw.githubusercontent.com/hectorm/hmirror/master/data/d3host/list.txt",
+"https://raw.githubusercontent.com/jerryn70/GoodbyeAds/master/Formats/GoodbyeAds-AdBlock-Filter.txt",
 "https://raw.githubusercontent.com/jerryn70/GoodbyeAds/master/Extension/GoodbyeAds-Spotify-AdBlock.txt",
+"https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/pro.mini.txt",
+"https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/tif.mini.txt",
+"https://raw.githubusercontent.com/AdguardTeam/cname-trackers/master/data/combined_disguised_trackers.txt",
+"https://raw.githubusercontent.com/hectorm/hmirror/master/data/easyprivacy/list.txt",
+"https://raw.githubusercontent.com/hectorm/hmirror/master/data/d3host/list.txt",
+"https://raw.githubusercontent.com/cbuijs/oisd/master/big/domains.top-n.adblock",
+"https://threatfox.abuse.ch/downloads/hostfile",
+"https://hblock.molinero.dev/hosts_adblock.txt",
 "https://raw.githubusercontent.com/r-a-y/mobile-hosts/master/AdguardMobileSpyware.txt"
     ],
     "whitelist_urls": [
