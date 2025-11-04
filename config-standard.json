@@ -11,8 +11,12 @@
   "blacklist_urls": [
 "https://raw.githubusercontent.com/jerryn70/GoodbyeAds/master/Formats/GoodbyeAds-AdBlock-Filter.txt",
 "https://raw.githubusercontent.com/jerryn70/GoodbyeAds/master/Extension/GoodbyeAds-Spotify-AdBlock.txt",
+"https://raw.githubusercontent.com/jerryn70/GoodbyeAds/master/Extension/GoodbyeAds-Samsung-AdBlock.txt",
 "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/pro.mini.txt",
 "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/tif.mini.txt",
+"https://raw.githubusercontent.com/hagezi/dns-blocklists/main/hosts/native.apple.txt",
+"https://raw.githubusercontent.com/hagezi/dns-blocklists/main/hosts/native.amazon.txt",
+"https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/native.tiktok.txt",
 "https://raw.githubusercontent.com/AdguardTeam/cname-trackers/master/data/combined_disguised_trackers.txt",
 "https://raw.githubusercontent.com/hectorm/hmirror/master/data/easyprivacy/list.txt",
 "https://raw.githubusercontent.com/hectorm/hmirror/master/data/d3host/list.txt",
