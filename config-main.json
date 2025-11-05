@@ -167,10 +167,10 @@
 "https://www.github.developerdan.com/hosts/lists/amp-hosts-extended.txt"
     ],
     "whitelist_urls": [
+"https://corefusion.xyz/whitelist.txt",
 "https://raw.githubusercontent.com/AhaDNS/Aha.Dns.Domains/master/Domains/whitelist.txt",
 "https://raw.githubusercontent.com/anudeepND/whitelist/master/domains/whitelist.txt",
-"https://raw.githubusercontent.com/Kin9Loui3/VoWiFi/main/TMobile-Ultra-AGH-Whitelist.txt",
-"https://corefusion.xyz/whitelist.txt"
+"https://raw.githubusercontent.com/Kin9Loui3/VoWiFi/main/TMobile-Ultra-AGH-Whitelist.txt"
     ],
     "blacklist_filename": "blacklist-main.txt",
     "whitelist_filename": "whitelist-main.txt"
