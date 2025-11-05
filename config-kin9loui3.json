@@ -9,12 +9,12 @@
   "enable_cosmetic_filters": false,
   "enable_scriptlets": false,
   "blacklist_urls": [
+"https://codeberg.org/EXCONN/gaming-privacy-list/raw/branch/main/EXCONN-main.txt",
+"https://raw.githubusercontent.com/DandelionSprout/adfilt/master/AdGuard%20Home%20Compilation%20List/AdGuardHomeCompilationList-Notifications.txt",
 "https://raw.githubusercontent.com/Kin9Loui3/adblock-filter-compiler/main/blacklist-main.txt",
 "https://raw.githubusercontent.com/Kin9Loui3/twitch_ad_block_list/main/Personal_Blacklist",
-"https://raw.githubusercontent.com/DandelionSprout/adfilt/master/AdGuard%20Home%20Compilation%20List/AdGuardHomeCompilationList-Notifications.txt",
-"https://raw.githubusercontent.com/TG-Twilight/AWAvenue-Ads-Rule/main/Filters/AWAvenue-Ads-Rule-Adguard.txt",
 "https://raw.githubusercontent.com/d3ward/toolz/master/src/d3host.adblock",
-"https://codeberg.org/EXCONN/gaming-privacy-list/raw/branch/main/EXCONN-main.txt"
+"https://raw.githubusercontent.com/TG-Twilight/AWAvenue-Ads-Rule/main/Filters/AWAvenue-Ads-Rule-Adguard.txt"
     ],
     "blacklist_filename": "blacklist-kin9loui3-personal.txt"
 }
