@@ -128,6 +128,7 @@
 "https://raw.githubusercontent.com/hectorm/hmirror/master/data/ublock-badware/list.txt",
 "https://raw.githubusercontent.com/hectorm/hmirror/master/data/ublock-privacy/list.txt",
 "https://raw.githubusercontent.com/hectorm/hmirror/master/data/ublock/list.txt",
+"https://malware-filter.gitlab.io/malware-filter/phishing-filter-hosts.txt",
 "https://pgl.yoyo.org/adservers/serverlist.php?hostformat=hosts&showintro=0&mimetype=plaintext&useip=0.0.0.0",
 "https://raw.githubusercontent.com/InAUGral/pihole-blocklist-gametrackers/main/pihole-blocklist-gametrackers.txt",
 "https://raw.githubusercontent.com/jarelllama/Scam-Blocklist/refs/heads/main/lists/adblock/scams_light.txt",
