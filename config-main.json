@@ -162,7 +162,7 @@
 "https://raw.githubusercontent.com/td-commits/threat-intel-domains/main/domains.txt",
 "https://s3.amazonaws.com/lists.disconnect.me/simple_ad.txt",
 "https://threatfox.abuse.ch/downloads/hostfile",
-"https://threatview.io/Downloads/URL-High-Confidence-Feed.txt",
+"https://threatview.io/Downloads/Experimental-IOC-Tweets.txt",
 "https://threatview.io/Downloads/IP-High-Confidence-Feed.txt",
 "https://v.firebog.net/hosts/Prigent-Crypto.txt",
 "https://v.firebog.net/hosts/static/w3kbl.txt",
