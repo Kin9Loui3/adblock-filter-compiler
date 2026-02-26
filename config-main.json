@@ -27,6 +27,7 @@
 "https://hosts.tweedge.net/suspicious.txt",
 "https://iplists.firehol.org/files/firehol_level1.netset",
 "https://paulgb.github.io/BarbBlock/blacklists/hosts-file.txt",
+"https://raw.githubusercontent.com/KnightmareVIIVIIXC/AIO-Firebog-Blocklists/main/hostslists/firebogsusadtrack.txt",
 "https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/MobileFilter/sections/adservers.txt",
 "https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/SpywareFilter/sections/mobile.txt",
 "https://raw.githubusercontent.com/AdguardTeam/cname-trackers/master/data/combined_disguised_ads.txt",
