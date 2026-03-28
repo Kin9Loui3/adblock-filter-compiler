@@ -1,6 +1,6 @@
 # Title: Kin9Loui3's Compiled Whitelist
 # Description: Compiled whitelist filter
-# Last Modified: 2026-03-27 18:50:50
+# Last Modified: 2026-03-28 18:35:07
 # Domain Count: 168
 # Duplicates Removed: 148
 # Domains Compressed: 148
