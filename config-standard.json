@@ -21,9 +21,9 @@
 "https://raw.githubusercontent.com/hectorm/hmirror/master/data/easyprivacy/list.txt",
 "https://raw.githubusercontent.com/Turtlecute33/adblocktest/master/src/d3host.txt",
 "https://raw.githubusercontent.com/cbuijs/oisd/master/big/domains.top-n.adblock",
-"https://threatfox.abuse.ch/downloads/hostfile",
-"https://hblock.molinero.dev/hosts_adblock.txt",
-"https://raw.githubusercontent.com/r-a-y/mobile-hosts/master/AdguardMobileSpyware.txt"
+"https://raw.githubusercontent.com/hectorm/hmirror/master/data/molinero.dev/list.txt",
+"https://raw.githubusercontent.com/r-a-y/mobile-hosts/master/AdguardMobileSpyware.txt",
+"https://threatfox.abuse.ch/downloads/hostfile"
     ],
     "whitelist_urls": [
 "https://corefusion.xyz/whitelist.txt",
