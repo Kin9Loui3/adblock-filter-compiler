@@ -11,6 +11,7 @@
   "remove_redundant_rules": true,
   "collapse_duplicates": true,
   "optimize_rules": true, 
+  "deaddomain": true,
   "blacklist_urls": [
 "https://raw.githubusercontent.com/jerryn70/GoodbyeAds/master/Formats/GoodbyeAds-AdBlock-Filter.txt",
 "https://raw.githubusercontent.com/jerryn70/GoodbyeAds/master/Extension/GoodbyeAds-Spotify-AdBlock.txt",
