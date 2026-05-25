@@ -8,6 +8,8 @@
   "mobile": "AdGuard Mobile Ads filter (Optimized)",
   "enable_cosmetic_filters": false,
   "enable_scriptlets": false,
+  "collapse_duplicates": true,
+  "optimize_rules": true, 
   "blacklist_urls": [
 "https://raw.githubusercontent.com/jerryn70/GoodbyeAds/master/Formats/GoodbyeAds-AdBlock-Filter.txt",
 "https://raw.githubusercontent.com/jerryn70/GoodbyeAds/master/Extension/GoodbyeAds-Spotify-AdBlock.txt",
