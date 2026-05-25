@@ -5,6 +5,9 @@ on:
     - cron: '0 18 * * *'  # Runs every day at 6 PM UTC
   workflow_dispatch:
 
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+
 jobs:
   generate_adblock_filters:
     runs-on: ubuntu-latest
