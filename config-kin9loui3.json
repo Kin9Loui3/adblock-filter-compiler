@@ -8,6 +8,8 @@
   "mobile": "AdGuard Mobile Ads filter (Optimized)",
   "enable_cosmetic_filters": false,
   "enable_scriptlets": false,
+  "collapse_duplicates": true,
+  "optimize_rules": true, 
   "blacklist_urls": [
 "https://codeberg.org/EXCONN/gaming-privacy-list/raw/branch/main/EXCONN-main.txt",
 "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/AdGuard%20Home%20Compilation%20List/AdGuardHomeCompilationList-Notifications.txt",
