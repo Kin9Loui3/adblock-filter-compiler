@@ -153,33 +153,23 @@ def process_config(config_file):
         logging.info(f"Whitelist saved to {wl_fname} ({len(wl_output.splitlines())} lines)")
 
 def main():
-    """Main entry point"""
-    parser = argparse.ArgumentParser(
-        description='Compile blacklist/whitelist filter lists from multiple sources'
-    )
-    parser.add_argument(
-        'config',
-        nargs='?',
-        default='config.json',
-        help='Path to config file (default: config.json)'
-    )
-    parser.add_argument(
-        '-v', '--verbose',
-        action='store_true',
-        help='Enable verbose logging'
-    )
+    parser = argparse.ArgumentParser(description="Adblock filter generator")
     
+    # Find all config-*.json files
+    config_files = [f for f in os.listdir('.') if f.startswith('config-') and f.endswith('.json')]
+    
+    parser.add_argument('configs', nargs='*', help="config JSON files", default=config_files)
     args = parser.parse_args()
-    
-    if args.verbose:
-        logging.getLogger().setLevel(logging.DEBUG)
-    
-    if not os.path.exists(args.config):
-        logging.error(f"Config file not found: {args.config}")
-        sys.exit(1)
-    
-    process_config(args.config)
-    logging.info("Processing complete!")
 
-if __name__ == '__main__':
+    if not args.configs:
+        logging.error("No config files found!")
+        return
+
+    for cfg in args.configs:
+        if os.path.isfile(cfg):
+            process_config(cfg)
+        else:
+            logging.error(f"Config file not found: {cfg}")
+
+if __name__ == "__main__":
     main()
