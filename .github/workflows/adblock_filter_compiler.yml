@@ -2,14 +2,12 @@ name: AdBlock Filter Compiler
 
 on:
   schedule:
-    - cron: '0 18 * * *'
+    - cron: '0 18 * * *'  # Runs every day at 6 PM UTC
   workflow_dispatch:
 
 jobs:
   generate_adblock_filters:
     runs-on: ubuntu-latest
-    permissions:
-      contents: write
 
     steps:
       - name: Checkout repository
@@ -18,7 +16,7 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
-          python-version: '3.12'
+          python-version: '3.x'
 
       - name: Install dependencies
         run: pip install --no-cache-dir requests
@@ -28,12 +26,10 @@ jobs:
 
       - name: Commit and push updated filter list
         run: |
-          git config --global user.name "github-actions[bot]"
-          git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          if [[ -n $(git status --porcelain) ]]; then
-            git add *.txt
-            git commit -m "chore: update filter list [skip ci]"
+          git config --global user.email "action@github.com"
+          git config --global user.name "GitHub Action"
+          git diff --quiet && echo "No changes to commit" || (
+            git add '*.txt'
+            git commit -m "Update filter list"
             git push
-          else
-            echo "No changes to commit"
-          fi
+          )
