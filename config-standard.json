@@ -19,7 +19,7 @@
 "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/native.tiktok.txt",
 "https://raw.githubusercontent.com/AdguardTeam/cname-trackers/master/data/combined_disguised_trackers.txt",
 "https://raw.githubusercontent.com/hectorm/hmirror/master/data/easyprivacy/list.txt",
-"https://raw.githubusercontent.com/hectorm/hmirror/master/data/d3host/list.txt",
+"https://raw.githubusercontent.com/Turtlecute33/adblocktest/master/src/d3host.txt",
 "https://raw.githubusercontent.com/cbuijs/oisd/master/big/domains.top-n.adblock",
 "https://threatfox.abuse.ch/downloads/hostfile",
 "https://hblock.molinero.dev/hosts_adblock.txt",
